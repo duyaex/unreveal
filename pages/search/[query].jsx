@@ -24,7 +24,7 @@ async function fetchCtgData(){
   let request=await unsplash.search.getPhotos({
     query:query,
     page:page,
-    per_page:28
+    perPage:18
 })
 
       // console.log(request.response.results)
@@ -35,7 +35,7 @@ async function fetchCtgData(){
 
 
 
-    }, [query])
+    }, [query,page])
     
     // console.log("hello",imageArr)
 
