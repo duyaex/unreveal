@@ -4,11 +4,11 @@ import Eachview from './Eachview'
 
 import events from '../../../Images/events.jpg'
 import fashion from '../../../Images/fashion.jpg'
-import nature from '../../../Images/nature.jpg'
+import nature from '../../../Images/Nature.jpg'
 import texture from '../../../Images/textures.jpg'
 import business from '../../../Images/bussiness.jpg'
 import travel from '../../../Images/travel.jpg'
-import animals from '../../../Images/animals.jpg'
+import animals from '../../../Images/Animals.jpg'
 import architect from '../../../Images/architect.jpg'
 
 
