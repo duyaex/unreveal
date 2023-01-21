@@ -39,7 +39,7 @@ async function fetchCtgData(){
 
 
 
-    }, [query])
+    }, [query,page])
     
     console.log("hello",imageArr[8])
 

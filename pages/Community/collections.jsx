@@ -21,7 +21,7 @@ const [page, setPage] = useState(1)
        await setCtnArr(req.response.results)
       }
       fetchCollectionsList()
-    }, [])
+    }, [page])
   return (
     <>
     <Collections ctnArr={ctnArr} setCtnArr={setCtnArr} page={page} setPage={setPage} unsplash={unsplash}/>

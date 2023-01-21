@@ -41,7 +41,7 @@ async function fetchCtnData(){
 
 
 
-    }, [id])
+    }, [id,page])
     
     // console.log("hello",imageArr[8])
 
