@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import React from 'react'
+import Link from 'next/link'
 
 // import curate from '../../../Images/curate.jpg'
 // import community from '../../../Images/community.jpg'

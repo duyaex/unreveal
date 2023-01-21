@@ -9,18 +9,18 @@ import { FiMenu } from "react-icons/fi";
 import { AiFillBuild, AiOutlineInstagram } from "react-icons/ai";
 import { FaImages, FaUsers, FaFacebook } from "react-icons/fa";
 import {
-  BsFillPeopleFill,
-  BsCursorFill,
-  BsFillCollectionFill,
-  BsArrowUpShort,
+  // BsFillPeopleFill,
+  // BsCursorFill,
+  // BsFillCollectionFill,
+  // BsArrowUpShort,
   BsTwitter,
 } from "react-icons/bs";
-import { CgProfile } from "react-icons/cg";
-import {
-  MdNotificationsActive,
-  MdLogin,
-  MdTipsAndUpdates,
-} from "react-icons/md";
+// import { CgProfile } from "react-icons/cg";
+// import {
+//   MdNotificationsActive,
+//   MdLogin,
+//   MdTipsAndUpdates,
+// } from "react-icons/md";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import SearchBox from "../Navigation_Bar/SearchBox";

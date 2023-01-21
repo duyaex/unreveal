@@ -38,7 +38,7 @@ export default function Home({bgUrl,uploader,proimage,respo,downloads,views,hash
      await setImageArr(req.response.results)
     }
     fetchRandomList()
-  }, [])
+  }, [page])
   
   const imagesRequest=async(term)=>{
     if (term !== ''){

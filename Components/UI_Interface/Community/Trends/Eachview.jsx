@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
-import img1 from '../../../Images/img1.jpg'
-import img2 from '../../../Images/img2.jpg'
+// import img1 from '../../../Images/img1.jpg'
+// import img2 from '../../../Images/img2.jpg'
 export default function Eachview({view}) {
     // console.log(view)
   return (

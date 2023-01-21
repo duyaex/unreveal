@@ -1,6 +1,6 @@
 import React from 'react'
-import img from '../../Images/img2.jpg'
-import {AiFillHeart,AiOutlineAppstoreAdd} from 'react-icons/ai'
+// import img from '../../Images/img2.jpg'
+// import {AiFillHeart,AiOutlineAppstoreAdd} from 'react-icons/ai'
 import {HiFolderDownload} from 'react-icons/hi'
 import { createApi } from 'unsplash-js'
 const unsplash=createApi(

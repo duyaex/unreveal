@@ -1,7 +1,7 @@
-import React,{useState,useEffect} from 'react'
-import img1 from '../../Images/img1.jpg'
-import img2 from '../../Images/img2.jpg'
-import img3 from '../../Images/img3.jpg'
+import React,{useState} from 'react'
+// import img1 from '../../Images/img1.jpg'
+// import img2 from '../../Images/img2.jpg'
+// import img3 from '../../Images/img3.jpg'
 
 import {AiOutlineAppstoreAdd, AiFillHeart} from 'react-icons/ai'
 import {IoMdImages} from 'react-icons/io'
