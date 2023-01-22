@@ -3,6 +3,7 @@ import Cards from './Cards'
 import Signup from './Signup'
 import StartBrowse from './StartBrowse'
 import fours from '../../../Images/fours.webp'
+import Image from 'next/image'
 
 export default function AboutUI() {
   return (
@@ -17,6 +18,7 @@ export default function AboutUI() {
     <p className='font-semibold py-2 text-lg'>Explore the world with your one CLICK on camera.</p>
     </div>
     <img src={fours.src} className="py-4" alt="" />
+    {/* <Image src={fours} fill={true}/> */}
     </>
   )
 }
