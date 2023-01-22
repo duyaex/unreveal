@@ -16,9 +16,9 @@ export default function Ctngal() {
 </div>
 <div className="images py-12 grid grid-cols-2 px-4 space-x-4 space-y-4 md:px-8 lg:px-12">
 
-<img src={ctn3.src} className="w-full rounded-lg shadow-xl  lg:h-80  h-56 object-cover" alt="" />
-<img src={ctn1.src} className="w-full  rounded-lg shadow-xl lg:h-80  opacity-80  h-56 object-cover" alt="" />
-<img src={ctn2.src} className="w-full rounded-lg shadow-xl  lg:h-80 opacity-70  h-56 object-cover" alt="" />
+<img src={ctn3.src} className="w-full rounded-lg shadow-xl bg-slate-700 bg-opacity-10  lg:h-80  h-56 object-cover" alt="" />
+<img src={ctn1.src} className="w-full  rounded-lg shadow-xl bg-slate-700 bg-opacity-10 lg:h-80  opacity-80  h-56 object-cover" alt="" />
+<img src={ctn2.src} className="w-full rounded-lg shadow-xl bg-slate-700 bg-opacity-10  lg:h-80 opacity-70  h-56 object-cover" alt="" />
 
 
 </div>
