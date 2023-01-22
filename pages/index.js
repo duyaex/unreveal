@@ -101,7 +101,7 @@ else{
      </span>
     {/* <SearchHeader/> */}
     {/*Image Information Banner */}
-    <div className="absolute -z-10 bottom-4 md:-bottom-14 lg:-bottom-0  md:w-full w-5/6 ">
+    <div className="absolute -z-10 bottom-12 md:-bottom-14 lg:-bottom-0  md:w-full w-5/6 ">
       <div className="flex justify-between items-center w-full text-sm">
       <div className="flex items-center space-x-2"> 
         <span className="">Captured By </span>
@@ -149,7 +149,7 @@ sugg?
     </div>
 {/* <Header/> First I take the query from input and then send the query to unsplash and then to this Photos and display the images*/}
 
-<Photos imageArr={imageArr} setImageArr={setImageArr} unsplash={unsplash} term={term} page={page} setPage={setPage}/>
+{/* <Photos imageArr={imageArr} setImageArr={setImageArr} unsplash={unsplash} term={term} page={page} setPage={setPage}/> */}
     </div>
   )
 }
