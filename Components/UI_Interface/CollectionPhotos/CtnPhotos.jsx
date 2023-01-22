@@ -2,6 +2,7 @@ import React,{useState} from "react";
 // import Photo from "./Photo";
 import CtnPhoto from "./CtnPhoto";
 import InfiniteScroll from "react-infinite-scroll-component";
+import Loader from "../Files/Loader";
 
 export default function CtnPhotos({imageArr,term,setImageArr,unsplash,page,setPage}) {
 //   const [images, setImages] = useState([])
@@ -32,7 +33,7 @@ export default function CtnPhotos({imageArr,term,setImageArr,unsplash,page,setPa
         dataLength={imageArr.length}
         next={fetchMoreImages}
         hasMore={true}
-        loader={<h4>Loading.........</h4>}
+        loader={<Loader/>}
         >
         <div
         //  className="render-div my-3 px-4 space-y-4"

@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 // import Photo from "./Photo";
 import InfiniteScroll from "react-infinite-scroll-component";
+import Loader from "../../Files/Loader";
 import Ctngal from "./Ctngal";
 import EachCtn from "./EachCtn";
 
@@ -30,7 +31,7 @@ export default function Collections({ctnArr,setCtnArr,page,unsplash,setPage}) {
         dataLength={ctnArr.length}
         next={fetchMoreCollections}
         hasMore={true}
-        loader={<h4>Loading.........</h4>}
+        loader={<Loader/>}
         >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-x-6 lg:gap-y-12 gap-y-8 px-4">
           {

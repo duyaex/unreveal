@@ -3,10 +3,11 @@ import { useRouter } from 'next/router'
 import { createApi } from 'unsplash-js';
 import Photos from '../../Components/UI_Interface/Photo_Section/Photos';
 import EachCtPhoto from '../../Components/UI_Interface/Files/EachCtPhoto';
+import Head from 'next/head';
 // import CtPhotos from '../../Components/UI_Interface/Category/CtPhotos';
 const unsplash=createApi(
     {
-      accessKey:"uOkxQ8pVVP3qNs7M4_EjJYN9LYm0y1JI6E1D4LbP1DE"
+      accessKey:"-7DuuC_b8A6AHSp7nT9GuJNGh2ohuKW7rG1bvnXOVwg"
     }
   );
 //   Images,query
@@ -31,7 +32,7 @@ async function fetchCtgData(){
 })
 
       // console.log(request.response.results)
-      // console.log("the imageArr",imageArr)
+      // console.log("the imageArr",imageArr,"pageNo",page)
       setImageArr(request.response.results)
       
     }
@@ -39,13 +40,19 @@ async function fetchCtgData(){
 
 
 
-    }, [query,page])
     
-    console.log("hello",imageArr[8])
+    },[query])
+    
+    // console.log("hello",imageArr[8])
 
   return (
     <>
 
+<Head>
+        <title>{query} - {imageArr.length} | Unreveal</title>
+        <meta name="description" content="Unreveal is the site for all visuals to easily download free high resolution  photos and use them for various purposes like creating your own app or website. It has easy customization, optimized and ultra resolution photos for free. It cost you no money. That's is the power of Unreveal." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
     {/* <img src={imageArr[0].urls.full} alt="" /> */}
   <EachCtPhoto 
  image={image}

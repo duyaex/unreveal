@@ -1,6 +1,6 @@
 import React from 'react'
-
 import { Blurhash } from "react-blurhash";
+
 export default function BlurHash({image}) {
   return (
     <>

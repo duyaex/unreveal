@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import { useRouter } from 'next/router'
 import { createApi } from 'unsplash-js';
 import Photos from '../../Components/UI_Interface/Photo_Section/Photos';
+import Head from 'next/head';
 // import CtPhotos from '../../Components/UI_Interface/Category/CtPhotos';
 const unsplash=createApi(
     {
@@ -14,7 +15,7 @@ export default function SearchImagesPage({}) {
     const [imageArr, setImageArr] = useState([])
 
     let query=router.query.query
-    const [page, setPage] = useState(1)
+    const [page, setPage] = useState(9)
 
     
     useEffect(() => {
@@ -35,12 +36,17 @@ async function fetchCtgData(){
 
 
 
-    }, [query,page])
+    }, [query])
     
     // console.log("hello",imageArr)
 
   return (
     <>
+    <Head>
+        <title>Searched For - {query} | Unreveal</title>
+        <meta name="description" content="Unreveal is the site for all visuals to easily download free high resolution  photos and use them for various purposes like creating your own app or website. It has easy customization, optimized and ultra resolution photos for free. It cost you no money. That's is the power of Unreveal." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
     <div className="text-lg px-8">
       Searched for <span className='font-semibold'>{query}</span>
     </div>

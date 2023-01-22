@@ -22,7 +22,7 @@ export default function Footer() {
         <nav className="list-none mb-10">
           <h2 className=' font-semibold text-black'>Company</h2>
           <Link href="/Company/about"><li>
-            <a className="text-gray-600 hover:text-gray-800">About</a>
+            <p className="text-gray-600 hover:text-gray-800">About</p>
           </li></Link>
           {/* <li>
             <a className="text-gray-600 hover:text-gray-800">Join the community</a>
@@ -31,7 +31,7 @@ export default function Footer() {
             <a className="text-gray-600 hover:text-gray-800">Blogs</a>
           </li> */}
           <Link href="/Company/reach"><li>
-            <a className="text-gray-600 hover:text-gray-800">Reach to us</a>
+            <p className="text-gray-600 hover:text-gray-800">Reach to us</p>
           </li></Link>
         </nav>
       </div>
@@ -43,10 +43,10 @@ export default function Footer() {
             <a className="text-gray-600 hover:text-gray-800">Become a contributor</a>
           </li> */}
           <Link href="/Community/trends"><li>
-            <a className="text-gray-600 hover:text-gray-800">Trends</a>
+            <p className="text-gray-600 hover:text-gray-800">Trends</p>
           </li></Link>
           <Link href="/Community/collections"><li>
-            <a className="text-gray-600 hover:text-gray-800">Collections</a>
+            <p className="text-gray-600 hover:text-gray-800">Collections</p>
           </li></Link>
           {/* <li>
             <a className="text-gray-600 hover:text-gray-800">Unreveal Awards</a>

@@ -7,7 +7,8 @@ import {AiOutlineAppstoreAdd, AiFillHeart} from 'react-icons/ai'
 import {IoMdImages} from 'react-icons/io'
 import Link from 'next/link'
 import Image from 'next/image'
-import BlurHash from './BlurHash'
+// import {BlurHash} from './BlurHash'
+import { Blurhash } from "react-blurhash";
 
 export default function Photo({image}) {
   // console.log("from photo component",image)
@@ -42,9 +43,16 @@ onLoad={imageStateHolder}
  src={image.urls.regular} alt="" />
 </div>
 <div className="write absolute top-0 text-xl font-bold text-white bg-opacity-20 group-hover:bg-opacity-10 transition-opacity duration-200 ease-in bg-black w-full h-full flex justify-center items-center ">
-
-{ !loaded &&
-  <BlurHash image={image}/> 
+ { !loaded &&
+  <Blurhash
+  hash={image.blur_hash}
+  width={500}
+  height={400}
+  resolutionX={32}
+  resolutionY={32}
+  className="relative gap-x-6 gap-y-4 h-96 "
+  punch={1}
+/> 
   }
 
 </div>
