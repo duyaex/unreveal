@@ -63,7 +63,7 @@ await  handleCondit(downloading.response.url,photo.alt_description)
 <span className='hover:text-slate-700'>
     <AiOutlineAppstoreAdd/>
 </span> */}
-<button onClick={downloadPhoto}  className='flex bg-slate-200 justify-center items-center space-x-2 md:border-2 hover:text-slate-700 md:border-slate-700 text-slate-700 md:rounded-md md:px-1'>
+<button onClick={downloadPhoto}  className='flex bg-slate-200 justify-center items-center space-x-2 border-2 hover:text-slate-700 border-slate-700 text-slate-700 rounded-md px-1'>
 <span className='text-base'>Download</span>
 <span><HiFolderDownload/></span>
 </button>
