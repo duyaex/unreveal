@@ -19,7 +19,7 @@ export default function ImagesViewDesign() {
     <h1 className='font-bold text-xl py-4 uppercase md:text-3xl lg:text-5xl'>creators everywhere</h1>
     
     <div className="py-2 ">
-       <img src={fulllogo.src} className="w-32 bg-slate-700 bg-opacity-10" alt="" />
+       <img src={fulllogo.src} className="w-32" alt="" />
 
     </div>
     <div className=" space-x-4 flex">
