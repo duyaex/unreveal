@@ -101,7 +101,7 @@ else{
      </span>
     {/* <SearchHeader/> */}
     {/*Image Information Banner */}
-    <div className="absolute -z-10 bottom-24 md:-bottom-14 lg:-bottom-0  md:w-full w-5/6 ">
+    <div className="absolute -z-10 bottom-32 md:-bottom-14 lg:-bottom-0  md:w-full w-5/6 ">
       <div className="flex justify-between items-center w-full text-sm">
       <div className="flex items-center space-x-2"> 
         <span className="">Captured By </span>
