@@ -228,7 +228,7 @@ export default function Navbar() {
                     >
                       Unreveal Awards
                     </li> */}
-                    <div className="flex items-center space-x-4 py-2 text-lg">
+                    <li className="flex items-center space-x-4 py-2 text-lg">
                       <span className="hover:text-black">
                         <FaFacebook />
                       </span>
@@ -238,7 +238,7 @@ export default function Navbar() {
                       <span className="hover:text-black">
                         <AiOutlineInstagram />
                       </span>
-                    </div>
+                    </li>
                   </ul>
                 </li>
 
