@@ -74,7 +74,7 @@ else{
         <title>Freely Download Images & Pictures | Unreveal</title>
         <meta name="description" content="Unreveal is the site for all visuals to easily download free high resolution  photos and use them for various purposes like creating your own app or website. It has easy customization, optimized and ultra resolution photos for free. It cost you no money. That's is the power of Unreveal." />
         <link rel="icon" href="/favicon.ico" />
-        <html>google-site-verification: googleb1ba4c93a197d75f.html</html>
+        <meta name="google-site-verification" content="oDvA5gxOAX6dQlG_vl5B2-X2R9dFrGWl1GIH0JK_lZg" />
       </Head>
 
 {/* <NavMenu/> */}
