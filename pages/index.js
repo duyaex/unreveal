@@ -26,7 +26,7 @@ export default function Home({bgUrl,uploader,proimage,respo,downloads,views,hash
   const [term, setTerm] = useState('')
   const [imageArr, setImageArr] = useState([])
   // const [sugg, setSugg] = useState(false)
-  const [page, setPage] = useState(1)
+  const [page, setPage] = useState(2)
   // const [bgUdsdsl, setBgUdsdsrl] = useState('')
   useEffect(() => {
     
