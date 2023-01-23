@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -24,7 +25,7 @@ md:rounded-t-none md:rounded-l-md px-4 pt-2 text-white">
 </div>
 <div className="images   ">
 
-<img src={signup.src} className="w-full rounded-b-md md:rounded-b-none md:rounded-r-md md:rounded-br-md
+<Image width={500} height={400} src={signup.src} className="w-full rounded-b-md md:rounded-b-none md:rounded-r-md md:rounded-br-md
  h-96 object-cover" alt="" />
 
 

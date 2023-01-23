@@ -17,7 +17,7 @@ export default function AboutUI() {
     <h1 className='text-center font-bold text-3xl '>Unreveal - Creators Everywhere</h1>
     <p className='font-semibold py-2 text-lg'>Explore the world with your one CLICK on camera.</p>
     </div>
-    <img src={fours.src} className="py-4" alt="" />
+    <Image width={600} height={400} src={fours.src} className="py-4 w-full" alt="" />
     {/* <Image src={fours} fill={true}/> */}
     </>
   )

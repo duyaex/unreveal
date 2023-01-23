@@ -5,6 +5,7 @@ import Nav from '../../Components/UI_Interface/EachPhoto/Nav';
 import ImageData from '../../Components/UI_Interface/EachPhoto/ImageData';
 import RelatedCollections from '../../Components/UI_Interface/EachPhoto/RelatedCollections';
 import Head from 'next/head';
+import Image from 'next/image';
 
 const unsplash=createApi(
     {
@@ -29,7 +30,7 @@ export default function PhotoId({photo}) {
 
 <div className="flex justify-center w-full py-4">
 <div className="w-5/6">
-    <img src={photo.urls.full} className="w-full hover:cursor-zoom-in" alt="" />
+    <Image width={500} height={600} src={photo.urls.full} className="w-full hover:cursor-zoom-in" alt="" />
 </div>
 </div>
 

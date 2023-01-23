@@ -2,6 +2,7 @@ import React from 'react'
 import Hire from './Hire'
 import ImageFlow from './ImageFlow'
 import fours from '../../../Images/fours.webp'
+import Image from 'next/image'
 export default function Join({images}) {
   return (
     <>
@@ -18,7 +19,7 @@ export default function Join({images}) {
 <p className='md:px-36 md:py-20 px-12 py-12 lg:px-48 xl:px-80 md:text-lg font-semibold'>Our aim is to build the most useful visual library ever created. Unreveal photography has led to more than 3 billion creative acts enabling people from everywhere to create. You don’t need to know someone, or have an agent, or have a name to be great on Unreveal. We’re a place where creators meet their audience, where individuals become a community, and a source for creativity.
 
 </p>
-<img src={fours.src} className="w-full" alt="" />
+<Image width={600} height={400} src={fours.src} className="w-full" alt="" />
 
 
 

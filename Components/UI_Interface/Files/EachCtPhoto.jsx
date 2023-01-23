@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function EachCtPhoto({image,heading,uploader,proimage}) {
@@ -12,7 +13,7 @@ export default function EachCtPhoto({image,heading,uploader,proimage}) {
 //  styles={{backgroundImage:`url(${image.blur_hash})`}}
   className="w-full relative ">
   
-<img src={image}   className='w-full relative lg:h-[36rem] h-96 md:h-[32rem] object-cover object-center' alt="" />
+<Image width={600} height={500} src={image}   className='w-full relative lg:h-[36rem] h-96 md:h-[32rem] object-cover object-center' alt="" />
 
 </div>
     </div>
@@ -40,7 +41,7 @@ export default function EachCtPhoto({image,heading,uploader,proimage}) {
       <div className="flex justify-between items-center w-full text-sm">
       <div className="flex items-center space-x-2"> 
         <span className="">Captured By </span>
-<img src={proimage} className="w-12 rounded-full object-cover" alt="" />
+<Image width={50} height={50} src={proimage} className="w-12 rounded-full object-cover" alt="" />
       <span className=''>{uploader}</span>
       </div>
       </div>

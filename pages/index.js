@@ -8,6 +8,7 @@ import Photos from '../Components/UI_Interface/Photo_Section/Photos'
 // Company(About, Join the team, Reach to us),Community(Become a contributor{Upload},Company Awards), Advertise,  Account(Collection, Images, Profile), Growth
 // Today you can start working with API's :-- APPLICATION NAME IS 'UNREVEAL'
 import { createApi } from 'unsplash-js';
+import Image from 'next/image';
 // Apply the category filter then Download option
 const unsplash=createApi(
   {
@@ -84,7 +85,7 @@ else{
 
 <div styles={{backgroundImage:`url(${hashUrl})`}} className="w-full bg-darkblue relative ">
   
-<img src={bgUrl}   className='w-full relative lg:h-[36rem] h-96 md:h-[32rem] object-cover object-center' alt="" />
+<Image src={bgUrl} width={500} height={400} className='w-full relative lg:h-[36rem] h-96 md:h-[32rem] object-cover object-center' alt="" />
 
 </div>
     </div>
@@ -106,7 +107,7 @@ else{
       <div className="flex justify-between items-center w-full text-sm">
       <div className="flex items-center space-x-2"> 
         <span className="">Captured By </span>
-<img src={proimage} className="w-8 rounded-full object-cover" alt="" />
+<Image width={50} height={40} src={proimage} className="w-8 rounded-full object-cover" alt="" />
       <span className=''>{uploader}</span>
       </div>
       <div className="space-x-4 flex items-center">

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 // import team1 from '../../../Images/team1.jpg'
@@ -22,7 +23,7 @@ export default function ImageFlow({images}) {
                     return(
 
 <div key={index} className="slide">
-    <img src={image.urls.small} className="img w-full h-72 object-cover" alt="" />
+    <Image width={200} height={150} src={image.urls.small} className="img w-full h-72 object-cover" alt="" />
 </div>
                     )
                 })

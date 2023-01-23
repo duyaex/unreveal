@@ -11,7 +11,7 @@ const unsplash=createApi(
 
 export default function CollectionsPage() {
   const [ctnArr, setCtnArr] = useState([])
-const [page, setPage] = useState(1)
+const [page, setPage] = useState(7)
     useEffect(() => {
       async function fetchCollectionsList(){
         let req=await unsplash.collections.list({

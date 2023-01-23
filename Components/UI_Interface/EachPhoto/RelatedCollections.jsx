@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 export default function RelatedCollections({relctn}) {
     const router=useRouter()
   return (
@@ -30,7 +31,7 @@ export default function RelatedCollections({relctn}) {
                         )
                     })
                 } */}
-    <img src={ctn.cover_photo.urls.small} className="w-full h-48 lg:h-60 xl:h-80  object-cover rounded-md"alt="" />
+    <Image width={400} height={300} src={ctn.cover_photo.urls.small} className="w-full h-48 lg:h-60 xl:h-80  object-cover rounded-md"alt="" />
   <h2 className=' text-lg font-bold text-black pt-2 pl-2'>{ctn.title}</h2>
   <p className='pl-2 font-normal'>{ctn.total_photos} Photos Curated By <span className='hover:underline hover:text-black'>{ctn.user.name}</span></p>
   <div className="tags grid gap-x-3 gap-y-2 pl-2 py-1 w-fit grid-cols-3 items-center">

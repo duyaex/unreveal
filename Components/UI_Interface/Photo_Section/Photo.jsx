@@ -65,7 +65,9 @@ onLoad={imageStateHolder}
 
  <div className="tabDown absolute bottom-0 hidden group-hover:flex  justify-between items-center w-full px-2 pb-1 bg-black text-white bg-opacity-20 hover:cursor-pointer pt-1">
    <div styles={{backgroundImage:`url(${image.blur_hash})`}} className="flex items-center space-x-2 ">
-   <img 
+   <Image
+   width={50}
+   height={40} 
     src={image.user.profile_image.medium }
     className="w-8 rounded-full object-cover"
     // placeHolderSrc={image.blur_hash}
