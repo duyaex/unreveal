@@ -4,6 +4,7 @@ import Contribute from './Contribute'
 import { BsArrowRightShort } from 'react-icons/bs'
 import fours from '../../../Images/fours.webp'
 import Link from 'next/link'
+import Image from 'next/image'
 export default function Contributor() {
   return (
     <>
@@ -23,7 +24,7 @@ export default function Contributor() {
         
     </div>
     <div className="py-12">
-        <img src={fours.src} alt="" />
+        <Image width={600} height={400} src={fours.src} alt="Fours" />
     </div>
     
     </>

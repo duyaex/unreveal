@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 // import img from '../../Images/img2.jpg'
 // import {AiFillHeart,AiOutlineAppstoreAdd} from 'react-icons/ai'
@@ -54,7 +55,7 @@ await  handleCondit(downloading.response.url,photo.alt_description)
 
         <div className="flex justify-between items-center w-full">
 <div className="flex items-center w-full space-x-2">
-<img src={photo.user.profile_image.medium} className="w-8 xl:w-16 rounded-full  object-cover" alt="" />
+<Image width={15} height={15} src={photo.user.profile_image.medium} className="w-8 xl:w-16 rounded-full  object-cover" alt={photo.user.name} />
 <p className='text-slate-700 text-sm md:text-base'>{photo.user.name}</p>
 </div>
 

@@ -86,7 +86,7 @@ else{
 
 <div styles={{backgroundImage:`url(${hashUrl})`}} className="w-full bg-darkblue relative ">
   
-<Image src={bgUrl} width={500} height={400} className='w-full relative lg:h-[36rem] h-96 md:h-[32rem] object-cover object-center' alt="" />
+<Image src={bgUrl} width={500} height={400} className='w-full relative lg:h-[36rem] h-96 md:h-[32rem] object-cover object-center' alt={hashUrl} />
 
 </div>
     </div>

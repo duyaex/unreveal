@@ -4,6 +4,7 @@ import cont2 from '../../../Images/cont2.jpg'
 import cont3 from '../../../Images/cont3.jpg'
 import cont4 from '../../../Images/cont4.jpg'
 import { BsArrowRightShort } from 'react-icons/bs'
+import Image from 'next/image'
 export default function Contribute() {
   return (
     <>
@@ -19,10 +20,10 @@ export default function Contribute() {
 </div>
 <div className="images py-12 grid grid-cols-2 px-4 space-x-4 space-y-4 md:px-8 lg:px-12">
 
-<img src={cont3.src} className="w-full rounded-lg shadow-xl  lg:h-72   h-56 object-cover" alt="" />
-<img src={cont1.src} className="w-full  rounded-lg shadow-xl lg:h-72  opacity-80  h-56 object-cover" alt="" />
-<img src={cont2.src} className="w-full rounded-lg shadow-xl  lg:h-72 opacity-70  h-56 object-cover" alt="" />
-<img src={cont4.src} className="w-full  rounded-lg shadow-xl  lg:h-72  px-4 h-56 object-cover" alt="" />
+<Image width={300} height={200} src={cont3.src} className="w-full rounded-lg shadow-xl  lg:h-72   h-56 object-cover" alt="contribute" />
+<Image width={300} height={200} src={cont1.src} className="w-full  rounded-lg shadow-xl lg:h-72  opacity-80  h-56 object-cover" alt="contribute" />
+<Image width={300} height={200} src={cont2.src} className="w-full rounded-lg shadow-xl  lg:h-72 opacity-70  h-56 object-cover" alt="contribute" />
+<Image width={300} height={200} src={cont4.src} className="w-full  rounded-lg shadow-xl  lg:h-72  px-4 h-56 object-cover" alt="contribute" />
 
 
 </div>

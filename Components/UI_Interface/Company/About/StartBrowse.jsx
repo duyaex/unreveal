@@ -22,10 +22,10 @@ export default function StartBrowse() {
 </div>
 <div className="images py-12 grid grid-cols-2 px-4 space-x-4 space-y-4 lg:px-16">
 
-<Image width={200} height={100} src={img3.src} className="w-full  rounded-lg shadow-xl lg:h-72  h-56 object-cover" alt="" />
-<Image width={200} height={100} src={str1.src} className="w-full   rounded-lg shadow-xl lg:h-72 h-56 object-cover" alt="" />
-<Image width={200} height={100} src={str2.src} className="w-full rounded-lg shadow-xl  lg:h-72 h-56 object-cover" alt="" />
-<Image width={200} height={100} src={str3.src} className="w-full   rounded-lg shadow-xl lg:h-72 px-4 h-56 object-cover" alt="" />
+<Image width={200} height={100} src={img3.src} className="w-full  rounded-lg shadow-xl lg:h-72  h-56 object-cover" alt="image" />
+<Image width={200} height={100} src={str1.src} className="w-full   rounded-lg shadow-xl lg:h-72 h-56 object-cover" alt="image" />
+<Image width={200} height={100} src={str2.src} className="w-full rounded-lg shadow-xl  lg:h-72 h-56 object-cover" alt="image" />
+<Image width={200} height={100} src={str3.src} className="w-full   rounded-lg shadow-xl lg:h-72 px-4 h-56 object-cover" alt="image" />
 
 
 </div>

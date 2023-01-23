@@ -3,6 +3,7 @@ import ctn1 from '../../../Images/ctn1.jpg'
 import ctn2 from '../../../Images/ctn2.jpg'
 import ctn3 from '../../../Images/ctn3.jpg'
 import { BsArrowRightShort } from 'react-icons/bs'
+import Image from 'next/image'
 export default function Ctngal() {
   return (
     <>
@@ -16,9 +17,9 @@ export default function Ctngal() {
 </div>
 <div className="images py-12 grid grid-cols-2 px-4 space-x-4 space-y-4 md:px-8 lg:px-12">
 
-<img src={ctn3.src} className="w-full rounded-lg shadow-xl bg-slate-700 bg-opacity-10  lg:h-80  h-56 object-cover" alt="" />
-<img src={ctn1.src} className="w-full  rounded-lg shadow-xl bg-slate-700 bg-opacity-10 lg:h-80  opacity-80  h-56 object-cover" alt="" />
-<img src={ctn2.src} className="w-full rounded-lg shadow-xl bg-slate-700 bg-opacity-10  lg:h-80 opacity-70  h-56 object-cover" alt="" />
+<Image width={300} height={200} src={ctn3.src} className="w-full rounded-lg shadow-xl bg-slate-700 bg-opacity-10  lg:h-80  h-56 object-cover" alt="collections" />
+<Image width={300} height={200} src={ctn1.src} className="w-full  rounded-lg shadow-xl bg-slate-700 bg-opacity-10 lg:h-80  opacity-80  h-56 object-cover" alt="collections" />
+<Image width={300} height={200} src={ctn2.src} className="w-full rounded-lg shadow-xl bg-slate-700 bg-opacity-10  lg:h-80 opacity-70  h-56 object-cover" alt="collections" />
 
 
 </div>

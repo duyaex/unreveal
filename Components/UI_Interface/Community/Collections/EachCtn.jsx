@@ -25,7 +25,7 @@ export default function EachCtn({ctn}) {
                         )
                     })
                 } */}
-    <Image width={300} height={200} src={ctn.cover_photo.urls.small} className="w-full   h-64 lg:h-80 xl:h-96  object-cover rounded-md"alt="" />
+    <Image width={300} height={200} src={ctn.cover_photo.urls.small} className="w-full   h-64 lg:h-80 xl:h-96  object-cover rounded-md" alt={ctn.title} />
   <h2 className=' text-lg font-bold text-black pt-2 pl-2'>{ctn.title}</h2>
   <p className='pl-2 font-normal'>{ctn.total_photos} Photos Curated By <span className='hover:underline hover:text-black'>{ctn.user.name}</span></p>
   <div className="tags grid gap-x-3 gap-y-2 pl-2 py-1 w-fit grid-cols-3 items-center">

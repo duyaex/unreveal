@@ -23,7 +23,7 @@ export default function ImageFlow({images}) {
                     return(
 
 <div key={index} className="slide">
-    <Image width={200} height={150} src={image.urls.small} className="img w-full h-72 object-cover" alt="" />
+    <Image width={200} height={150} src={image.urls.small} className="img w-full h-72 object-cover" alt={index} />
 </div>
                     )
                 })

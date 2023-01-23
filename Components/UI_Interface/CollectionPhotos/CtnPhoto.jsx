@@ -37,7 +37,7 @@ width={500} height={400}
 // placeholder="blur"
 // blurDataURL={image.blur_hash}
 onLoad={imageStateHolder}
- src={image.urls.regular} alt="" />
+ src={image.urls.regular} alt={image.user.name} />
 </div>
 <div className="write absolute top-0 text-xl font-bold text-white bg-opacity-20 group-hover:bg-opacity-10 transition-opacity duration-200 ease-in bg-black w-full h-full flex justify-center items-center ">
 
@@ -61,7 +61,7 @@ onLoad={imageStateHolder}
     // placeHolderSrc={image.blur_hash}
     loading='lazy'
     
-    alt="" />
+    alt={image.user.name} />
     <p>{image.user.first_name}</p>
    </div>
     

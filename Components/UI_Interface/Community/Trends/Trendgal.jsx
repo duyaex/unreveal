@@ -19,9 +19,9 @@ export default function Trendgal() {
 </div>
 <div className="images py-12 grid grid-cols-2 px-4 space-x-4 space-y-4 md:px-8 lg:px-12">
 
-<Image width={300} height={200} src={trend3.src} className="w-full rounded-lg shadow-xl  lg:h-72   h-56 object-cover" alt="" />
-<Image width={300} height={200} src={trend1.src} className="w-full  rounded-lg shadow-xl lg:h-72  opacity-80  h-56 object-cover" alt="" />
-<Image width={300} height={200} src={trend2.src} className="w-full rounded-lg shadow-xl  lg:h-72 opacity-70  h-56 object-cover" alt="" />
+<Image width={300} height={200} src={trend3.src} className="w-full rounded-lg shadow-xl  lg:h-72   h-56 object-cover" alt="trends" />
+<Image width={300} height={200} src={trend1.src} className="w-full  rounded-lg shadow-xl lg:h-72  opacity-80  h-56 object-cover" alt="trends" />
+<Image width={300} height={200} src={trend2.src} className="w-full rounded-lg shadow-xl  lg:h-72 opacity-70  h-56 object-cover" alt="trends" />
 
 
 </div>

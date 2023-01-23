@@ -5,6 +5,7 @@ import team2 from '../../../Images/team2.jpg'
 import team3 from '../../../Images/team3.jpg'
 import team4 from '../../../Images/team4.jpg'
 import {BsArrowRightShort} from 'react-icons/bs'
+import Image from 'next/image'
 
 export default function Hire() {
   return (
@@ -26,10 +27,10 @@ export default function Hire() {
 <div className="images py-12 grid grid-cols-2 px-4 space-x-4 space-y-4">
 
 
-<img src={team3.src} className="w-full rounded-lg shadow-xl   h-56 object-cover" alt="" />
-<img src={team1.src} className="w-full  rounded-lg shadow-xl opacity-70 h-56 object-cover" alt="" />
-<img src={team2.src} className="w-full rounded-lg shadow-xl opacity-80  h-56 object-cover" alt="" />
-<img src={team4.src} className="w-full  rounded-lg shadow-xl  px-4 h-56 object-cover" alt="" />
+<Image width={300} height={200} src={team3.src} className="w-full rounded-lg shadow-xl   h-56 object-cover" alt="image" />
+<Image width={300} height={200} src={team1.src} className="w-full  rounded-lg shadow-xl opacity-70 h-56 object-cover" alt="image" />
+<Image width={300} height={200} src={team2.src} className="w-full rounded-lg shadow-xl opacity-80  h-56 object-cover" alt="image" />
+<Image width={300} height={200} src={team4.src} className="w-full  rounded-lg shadow-xl  px-4 h-56 object-cover" alt="image" />
 
 
 </div>
