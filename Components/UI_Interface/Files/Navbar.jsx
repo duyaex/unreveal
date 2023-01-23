@@ -120,7 +120,7 @@ export default function Navbar() {
 
               <>
                 <li className=" transition-all duration-200 hover:cursor-pointer ">
-                  <a
+                  <p
                     onClick={() => setClick(!click)}
                     className="flex px-4 py-1 font-semibold  justify-start items-center"
                   >
@@ -131,7 +131,7 @@ export default function Navbar() {
                     <span className="ml-16 text-slate-400">
                       <BiChevronDown />
                     </span>
-                  </a>
+                  </p>
 
                   <ul
                     className={
@@ -178,7 +178,7 @@ export default function Navbar() {
                   </ul>
                 </li>
                 <li className=" transition-all duration-200 hover:cursor-pointer ">
-                  <a
+                  <p
                     onClick={() => setClickes(!clickes)}
                     className="flex px-4 py-1 font-semibold  justify-start items-center"
                   >
@@ -189,7 +189,7 @@ export default function Navbar() {
                     <span className="ml-12 text-slate-400">
                       <BiChevronDown />
                     </span>
-                  </a>
+                  </p>
 
                   <ul
                     className={
@@ -228,7 +228,7 @@ export default function Navbar() {
                     >
                       Unreveal Awards
                     </li> */}
-                    <li className="flex items-center space-x-4 py-2 text-lg">
+                    <div className="flex items-center space-x-4 py-2 text-lg">
                       <span className="hover:text-black">
                         <FaFacebook />
                       </span>
@@ -238,7 +238,7 @@ export default function Navbar() {
                       <span className="hover:text-black">
                         <AiOutlineInstagram />
                       </span>
-                    </li>
+                    </div>
                   </ul>
                 </li>
 
