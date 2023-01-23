@@ -4,6 +4,7 @@ import {AiFillInstagram} from 'react-icons/ai'
 import {AiFillTwitterCircle} from 'react-icons/ai'
 import logo from '../../Images/logo.png'
 import Link from 'next/link'
+import Image from 'next/image'
 export default function Footer() {
   return (
     <>
@@ -11,7 +12,7 @@ export default function Footer() {
   <div className="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
       <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <img src={logo.src} className="w-12" alt="" />
+        <Image width={60} height={40} src={logo.src} className="w-12" alt="" />
         <span className="ml-3 text-2xl">Unreveal</span>
       </a>
       <p className="mt-2 text-sm text-gray-500">Plateform for creators everywhere</p>
