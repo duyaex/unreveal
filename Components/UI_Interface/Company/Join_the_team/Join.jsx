@@ -1,28 +1,51 @@
-import React from 'react'
-import Hire from './Hire'
-import ImageFlow from './ImageFlow'
-import fours from '../../../Images/fours.webp'
-import Image from 'next/image'
-export default function Join({images}) {
+import React from "react";
+import Hire from "./Hire";
+import ImageFlow from "./ImageFlow";
+import fours from "../../../Images/fours.webp";
+import Image from "next/image";
+import Link from "next/link";
+
+import { BsArrowRightShort } from "react-icons/bs";
+import WorkWithUs from "./WorkWithUs";
+// Add liked and viewed images in this page
+// Rectify all the pages ---> 28/02/2023
+
+export default function Join({ images,totalUsers,totalPhotos }) {
   return (
     <>
-    <Hire/>
-    <div className="OurStory space-y-4 md:py-8 md:px-36 lg:px-48 xl:py-16 xl:px-80 py-4 px-12">
+      <Hire />
+      <div className="OurStory space-y-4 md:py-8 md:px-36 lg:px-48 xl:py-16 xl:px-80 py-4 px-4">
         <h1 className="text-4xl font-bold">Our Story</h1>
-        <p className='font-semibold'>In 2023, Unreveal launched as a Tumblr blog with 10 high-resolution photos that could be used for anything. Today, Unreveal powers more people and products than any other visual search engine in the world, with more than 100 million images downloaded every month—more than the rest of the industry combined.</p>
-        <p className='font-semibold'>We’re building a community where the principles of sharing and openness have taken the place of copyright and red tape. Instead of photos being hoarded and shut down, photos on Unreveal are given as fuel for creativity.
+        <p className="font-semibold">
+          In 2023, Unreveal launched with 10 resolution photos that can be used
+          in any work. Fortunately, the people got to know about the unending
+          experience of downloading the photos and contributing to Unreveal. Our
+          creators proved that there millions of skilled persons can be found
+          around the world.
+        </p>
+        <p className="font-semibold">
+          We’re building a community where the principle is of sharing the
+          glimpse and open feelings. Sharp your skills, there a single effort of
+          your contribution to Unreveal can make a big impact on this huge
+          world. Instead of throwing the photo in the sense of assemblence of
+          simple colors, Unreveal gives you the fuel of creativity.
+        </p>
+      </div>
+      {/* <ImagesDesign dsImgs={dsImgs} /> */}
+      {images.length>8 && <ImageFlow images={images}/>}
+      
 
-</p>
-    </div>
-    <ImageFlow images={images}/>
-    {/* <ImageFlow/> */}
-<p className='md:px-36 md:py-20 px-12 py-12 lg:px-48 xl:px-80 md:text-lg font-semibold'>Our aim is to build the most useful visual library ever created. Unreveal photography has led to more than 3 billion creative acts enabling people from everywhere to create. You don’t need to know someone, or have an agent, or have a name to be great on Unreveal. We’re a place where creators meet their audience, where individuals become a community, and a source for creativity.
+      <p className="md:px-36 md:py-20 px-4 py-12 lg:px-48 xl:px-80 md:text-lg font-semibold">
+        Our aim is to build the most useful visual library ever created.
+        Unreveal photography has led to more than 3 million creative acts
+        enabling people from everywhere to create. You don’t need to know
+        someone, or have an agent, or have a name to be great on Unreveal. We’re
+        a place where creators meet their audience, where individuals become a
+        community, and a source for creativity.
+      </p>
 
-</p>
-<Image width={600} height={400} src={fours.src} className="w-full" alt="" />
-
-
-
+      <WorkWithUs totalUsers={totalUsers} totalPhotos={totalPhotos}/>
+      
     </>
-  )
+  );
 }

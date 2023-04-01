@@ -8,7 +8,7 @@ export default function WhatWeAre() {
 
     <>
 {/*Features :--> BOOSTING YOUR SPEED, HIGHLY COMFORTABLE, ULTRA DURABLE, LESS PRICE */}
-    <div className='bg-darkblue  w-full py-12'>
+    <div className='bg-gradient-to-r from-black via-purple-900 to-black ...  w-full py-12'>
 
 <div className="FullPortion lg:flex lg:justify-between w-full lg:space-y-0 lg:px-12 md:space-x-0 lg:space-x-8 space-y-12">
 
@@ -42,7 +42,7 @@ export default function WhatWeAre() {
 <div className="card2 px-8 lg:px-4 md:px-4 py-6 text-white">
   <p className=' text-4xl border-2 border-sky-600 w-fit p-2'><GiJumpAcross className=''/></p>
   <h2 className='uppercase text-lg font-semibold pt-2'>highly trusted contributors</h2>
-  <p className='text-base font-light mt-1'>Unreveal has 1 million plus contributors from all around the world and take care about your desires that you expect with Unreveal’s creators.</p>
+  <p className='text-base font-light mt-1'>Unreveal has 1 hundred plus contributors from all around the world and take care about your desires that you expect with Unreveal’s creators.</p>
 </div>
 </div>
 <div className="">

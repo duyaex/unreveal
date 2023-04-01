@@ -98,20 +98,22 @@ export default function Category() {
   ]
   return (
     <>
-    <div className='bg-white py-1 md:py-2 lg:py-3'>
+    <div className='bg-white  py-1 md:py-2 lg:py-3'>
       
-       {/* <div  className="overflow-scroll flex justify-start items-center space-x-12 h-12   bg-white text-slate-800 ">
-      <button></button>
-       <button className='font-semibold hover:underline'>Fashion</button>
+      
        
-    </div> */}
+   
       <Swiper navigation={true}
       // slidesPerView={'auto'}
       breakpoints={{
         // when window width is >= 640px
+        320: {
+          width: 320,
+          slidesPerView: 2,
+        },
         425: {
           width: 425,
-          slidesPerView: 3,
+          slidesPerView: 2,
         },
         768: {
           width: 768,
@@ -134,7 +136,7 @@ export default function Category() {
           category && category.map((ctg,index)=>{
             return(
               <SwiperSlide className='' key={index}>
-                <Link href={`/category/${ctg.path}`}><div className="text-slate-700">{ctg.text}</div></Link>
+                <Link href={`/category/${ctg.text}`}><div className="text-slate-700">{ctg.text}</div></Link>
               </SwiperSlide>
             )
           })

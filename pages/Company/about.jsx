@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import AboutUI from '../../Components/UI_Interface/Company/About/AboutUI'
+import Footer from '../../Components/UI_Interface/Files/Footer'
 
 export default function About() {
   return (
@@ -11,6 +12,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <AboutUI/>
+    <Footer/>
     </>
   )
 }

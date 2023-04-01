@@ -1,8 +1,11 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+import { parseCookies } from 'nookies'
 
-export default function EachCtPhoto({image,heading,uploader,proimage}) {
-  // console.log("The image",image)
+export default function EachCtPhoto({image,heading}) {
+  console.log("The image",image)
+  const{token}=parseCookies()
   return (
     <>
   
@@ -13,7 +16,7 @@ export default function EachCtPhoto({image,heading,uploader,proimage}) {
 //  styles={{backgroundImage:`url(${image.blur_hash})`}}
   className="w-full relative ">
   
-<Image width={600} height={500} src={image}   className='w-full relative lg:h-[36rem] h-96 md:h-[32rem] object-cover object-center' alt={heading} />
+<Image width={600} height={500} src={image[0].url}   className='w-full relative lg:h-[36rem] h-96 md:h-[32rem] object-cover object-center' alt={heading} />
 
 </div>
     </div>
@@ -30,35 +33,22 @@ export default function EachCtPhoto({image,heading,uploader,proimage}) {
       <p  className='font-semibold   '>Powered by creators everywhere,</p>
       <div className="pt-16">
 
-      {/* <button className='px-2 py-2 rounded-md text-center bg-white text-slate-700'>
+      <Link href={!token?"/user/login":"/photostudio/preupload"}><button className='px-4 py-2 rounded-md text-center bg-white text-slate-700'>
         Submit to <span className='capitalize text-black font-semibold'>{heading}    </span>
-      </button> */}
+      </button></Link>
       </div>
      </span>
     {/* <SearchHeader/> */}
     {/*Image Information Banner */}
-    <div className="absolute -z-10 bottom-0 md:-bottom-14 lg:-bottom-0  md:w-full w-5/6 ">
+    <div className="absolute -z-10   md:w-full w-5/6 ">
       <div className="flex justify-between items-center w-full text-sm">
       <div className="flex items-center space-x-2"> 
         <span className="">Captured By </span>
-<Image width={50} height={50} src={proimage} className="w-12 rounded-full object-cover" alt={uploader} />
-      <span className=''>{uploader}</span>
+<Image width={50} height={50} src={image[0].user.profile_image} className="w-12 h-12 rounded-full object-top object-cover" alt={image[0].user.firstName} />
+      <span className=''>{image[0].user.username}</span>
       </div>
       </div>
     </div>
-    {/*Image Information Banner */}
-    <div className="w-full ">
-        <div className="w-full flex justify-center items-center relative ">
-          
-          
-          </div>
-          {/* {
-sugg?
-<h1 className='w-full bg-red-400 h-48'>Suggestion box</h1>:""
-          } */}
-        </div>
-    {/* <SearchHeader/> */}
-      
       </div>
       </div>
     </div>

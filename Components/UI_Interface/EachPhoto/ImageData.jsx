@@ -25,7 +25,7 @@ export default function ImageData({photo}) {
         <span className='text-red-700'><AiFillHeart/></span>
         <span>Likes</span>
         </div>
-   <p>{photo.likes}</p>
+   <p>{photo.likes.length}</p>
 </div>
 
     </div>

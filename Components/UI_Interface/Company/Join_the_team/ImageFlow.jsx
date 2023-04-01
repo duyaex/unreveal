@@ -22,8 +22,8 @@ export default function ImageFlow({images}) {
                images && images.map((image,index)=>{
                     return(
 
-<div key={index} className="slide">
-    <Image width={200} height={150} src={image.urls.small} className="img w-full h-72 object-cover" alt={index} />
+<div key={index} className="slide w-full">
+    <Image width={200} height={150} src={image.url} className="img w-full h-72 object-center object-cover" alt={image.title} />
 </div>
                     )
                 })

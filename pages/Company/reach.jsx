@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import Reach from '../../Components/UI_Interface/Company/Reach_to_us/Reach'
+import Footer from '../../Components/UI_Interface/Files/Footer'
 
 export default function reach() {
   return (
@@ -11,6 +12,7 @@ export default function reach() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
      <Reach/>   
+     <Footer/>
     </>
   )
 }

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import Trends from '../../Components/UI_Interface/Community/Trends/Trends'
+import Footer from '../../Components/UI_Interface/Files/Footer'
 
 export default function trends() {
   return (
@@ -11,6 +12,7 @@ export default function trends() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <Trends/>
+    <Footer/>
     </>
   )
 }

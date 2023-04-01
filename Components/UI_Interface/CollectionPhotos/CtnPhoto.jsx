@@ -1,11 +1,8 @@
 import React,{useState} from 'react'
-// 
 
-import {AiOutlineAppstoreAdd, AiFillHeart} from 'react-icons/ai'
-import {IoMdImages} from 'react-icons/io'
 import Link from 'next/link'
 import Image from 'next/image'
-import BlurHash from '../Photo_Section/BlurHash'
+
 
 export default function CtnPhoto({image}) {
   // console.log("from photo component",image)
@@ -25,7 +22,7 @@ setLoaded(true)
   return (
     <>
     <div className="Photo relative group w-full">
- <Link href={`/photo/${image.id}`}>
+ <Link href={`/photo/${image.ImageId._id}`}>
   
  <div className="eachview  relative w-full h-96">
 <div className="image relative w-full h-full  ">
@@ -36,16 +33,16 @@ className='relative group-hover:opacity-90 w-full h-96 object-cover'
 width={500} height={400}
 // placeholder="blur"
 // blurDataURL={image.blur_hash}
-onLoad={imageStateHolder}
- src={image.urls.regular} alt={image.user.name} />
+// onLoad={imageStateHolder}
+ src={image.ImageId.url} alt={image.ImageId.title} />
 </div>
-<div className="write absolute top-0 text-xl font-bold text-white bg-opacity-20 group-hover:bg-opacity-10 transition-opacity duration-200 ease-in bg-black w-full h-full flex justify-center items-center ">
+{/* <div className="write absolute top-0 text-xl font-bold text-white bg-opacity-20 group-hover:bg-opacity-10 transition-opacity duration-200 ease-in bg-black w-full h-full flex justify-center items-center ">
 
 { !loaded &&
   <BlurHash image={image}/> 
   }
 
-</div>
+</div> */}
 </div>
  
  
@@ -53,7 +50,7 @@ onLoad={imageStateHolder}
 
   </Link>
 
- <div className="tabDown absolute bottom-0 hidden group-hover:flex  justify-between items-center w-full px-2 pb-1 bg-black text-white bg-opacity-20 hover:cursor-pointer pt-1">
+ {/* <div className="tabDown absolute bottom-0 hidden group-hover:flex  justify-between items-center w-full px-2 pb-1 bg-black text-white bg-opacity-20 hover:cursor-pointer pt-1">
    <div styles={{backgroundImage:`url(${image.blur_hash})`}} className="flex items-center space-x-2 ">
    <Image width={50} height={50} 
     src={image.user.profile_image.medium }
@@ -73,7 +70,7 @@ onLoad={imageStateHolder}
     </div>
 
     
- </div>
+ </div> */}
 
 </div>
 {/* <h1>{image.user.name}</h1> */}

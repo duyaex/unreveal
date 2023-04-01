@@ -1,16 +1,17 @@
 import React,{useState,useEffect} from 'react';
-import Footer from '../Components/UI_Interface/Files/Footer'
+import baseUrl from '../mongodb/baseUrl'
 import Navbar from '../Components/UI_Interface/Files/Navbar'
 import '../styles/globals.css'
-// import TopLoader from "react-top-loader";
+import { parseCookies } from 'nookies';
 import LoadingBar from 'react-top-loading-bar'
 import {useRouter} from 'next/router';
 
 
-// Here you are to send Random image request and change image of header every time
 function MyApp({ Component, pageProps }) {
+  const {token}=parseCookies()
   const router=useRouter()
   const [progress, setProgress] = useState(0)
+  const [notifications, setNotifications] = useState([])
 useEffect(() => {
   router.events.on('routeChangeStart',()=>{
 setProgress(40)
@@ -21,6 +22,24 @@ setProgress(100)
  
 }, [])
 
+useEffect(() => {
+ async function getAllNotifications(){
+  const req=await fetch(`${baseUrl}/api/account/notifications`,{
+    method:"GET",
+    headers:{
+      "AUthorization":token
+    }
+  })
+  const res=await req.json()
+  console.log("The notifications are ",res)
+  setNotifications(res.notifications)
+ }
+ if(token){
+  getAllNotifications()
+ }
+}, [token])
+
+
   return <>
    <LoadingBar
         color='#26425d'
@@ -28,10 +47,11 @@ setProgress(100)
         waitingTime={600}
         onLoaderFinished={() => setProgress(0)}
       />
-  {/* <TopLoader show progress={0.2} fixed={false} backgroundColor="#ddd" /> */}
-  <Navbar/> 
-  <Component {...pageProps} />
-  <Footer/>
+
+  <Navbar notifications={notifications} setNotifications={setNotifications}/> 
+ 
+  <Component {...pageProps}  />
+
   </>
 }
 

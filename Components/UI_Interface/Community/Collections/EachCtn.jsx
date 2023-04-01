@@ -2,15 +2,26 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-// import curate from '../../../Images/curate.jpg'
 // import community from '../../../Images/community.jpg'
 // import fuel from '../../../Images/fuel.jpg'
+import {useRouter} from 'next/router'
+import { ReactPhotoCollage } from "react-photo-collage";
 export default function EachCtn({ctn}) {
   // console.log("The ctns",ctn[0])
+  const router=useRouter()
+  // console.log("The ctns image url",ctn.Images[0].ImageId.url)
+  // Now start constructing JOIN THE TEAM page ---> 26/02/2023
+  const setting = {
+    width: '300px',
+    height: ['350px', '75px'],
+    layout: [1, 3],
+    photos:ctn.cover_images,
+    showNumOfRemainingPhotos: false
+  };
   return (
     <>
     
-            <Link href={`/collections/${ctn.id}`}><div className="w-full  md:px-0 md:py-0 transition-all duration-200 ease-linear hover:-translate-y-1 hover:cursor-pointer">
+            <div className="w-full  md:px-0 md:py-0 opacity-100 hover:opacity-90">
                 {/* {
                     ctn.preview_photos.map((previmg,index)=>{
                         return(
@@ -25,10 +36,16 @@ export default function EachCtn({ctn}) {
                         )
                     })
                 } */}
-    <Image width={300} height={200} src={ctn.cover_photo.urls.small} className="w-full   h-64 lg:h-80 xl:h-96  object-cover rounded-md" alt={ctn.title} />
+    {/* <Image width={300} height={200} src={ctn.} className="w-full   h-64 lg:h-80 xl:h-96  object-cover rounded-md" alt={ctn.title} /> */}
+    <div className="rounded-md">
+{/* <img src={curate.src} alt="cltn" /> */}
+<ReactPhotoCollage className="rounded-md" {...setting} />
+    </div>
+    <div onClick={()=>router.push(`/collections/${ctn._id}`)} className="">
   <h2 className=' text-lg font-bold text-black pt-2 pl-2'>{ctn.title}</h2>
-  <p className='pl-2 font-normal'>{ctn.total_photos} Photos Curated By <span className='hover:underline hover:text-black'>{ctn.user.name}</span></p>
-  <div className="tags grid gap-x-3 gap-y-2 pl-2 py-1 w-fit grid-cols-3 items-center">
+  <p className='pl-2 font-normal'>{ctn.Images.length} Photos Curated By <span className='hover:underline hover:text-black'>{ctn.curatedBy}</span></p>
+  </div>
+  {/* <div className="tags grid gap-x-3 gap-y-2 pl-2 py-1 w-fit grid-cols-3 items-center">
 {
     ctn.tags.map((tag,index)=>{
         return(
@@ -39,14 +56,15 @@ export default function EachCtn({ctn}) {
         )
     })
 }
-  </div>
+  </div> */}
 
 
 
 
 
-    </div></Link>
-    
+    </div>
+
     </>
+
   )
 }

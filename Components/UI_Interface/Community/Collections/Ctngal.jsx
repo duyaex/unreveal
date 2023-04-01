@@ -1,8 +1,4 @@
 import React from 'react'
-import ctn1 from '../../../Images/ctn1.jpg'
-import ctn2 from '../../../Images/ctn2.jpg'
-import ctn3 from '../../../Images/ctn3.jpg'
-import { BsArrowRightShort } from 'react-icons/bs'
 import Image from 'next/image'
 export default function Ctngal() {
   return (
@@ -17,9 +13,9 @@ export default function Ctngal() {
 </div>
 <div className="images py-12 grid grid-cols-2 px-4 space-x-4 space-y-4 md:px-8 lg:px-12">
 
-<Image width={300} height={200} src={ctn3.src} className="w-full rounded-lg shadow-xl bg-slate-700 bg-opacity-10  lg:h-80  h-56 object-cover" alt="collections" />
-<Image width={300} height={200} src={ctn1.src} className="w-full  rounded-lg shadow-xl bg-slate-700 bg-opacity-10 lg:h-80  opacity-80  h-56 object-cover" alt="collections" />
-<Image width={300} height={200} src={ctn2.src} className="w-full rounded-lg shadow-xl bg-slate-700 bg-opacity-10  lg:h-80 opacity-70  h-56 object-cover" alt="collections" />
+<Image width={800} height={600} src={"https://res.cloudinary.com/unreveal/image/upload/v1678877601/ctn3_zgi1ky.jpg"} className="w-full rounded-lg shadow-xl bg-slate-700 bg-opacity-10  lg:h-80  h-56 object-cover" alt="collections" />
+<Image width={800} height={600} src={"https://res.cloudinary.com/unreveal/image/upload/v1678877679/reach_fjo9v2.jpg"} className="w-full  rounded-lg shadow-xl bg-slate-700 bg-opacity-10 lg:h-80  opacity-80  h-56 object-cover" alt="collections" />
+<Image width={800} height={600} src={"https://res.cloudinary.com/unreveal/image/upload/v1678877588/ctn1_xr8ccf.jpg"} className="w-full rounded-lg shadow-xl bg-slate-700 bg-opacity-10  lg:h-80 opacity-70  h-56 object-cover" alt="collections" />
 
 
 </div>

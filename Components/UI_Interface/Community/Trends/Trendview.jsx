@@ -2,14 +2,6 @@ import React from 'react'
 
 import Eachview from './Eachview'
 
-import events from '../../../Images/events.jpg'
-import fashion from '../../../Images/fashion.jpg'
-import nature from '../../../Images/Nature.jpg'
-import texture from '../../../Images/textures.jpg'
-import business from '../../../Images/bussiness.jpg'
-import travel from '../../../Images/travel.jpg'
-import animals from '../../../Images/Animals.jpg'
-import architect from '../../../Images/architect.jpg'
 
 
 
@@ -17,42 +9,42 @@ export default function Trendview() {
     // console.log(trendsViewImages)
     let trendsViewImages = [{
         text: "Textures & Patterns",
-        photo: texture,
+        photo: "https://res.cloudinary.com/unreveal/image/upload/v1678877674/textures_fqbpa5.jpg",
         path:"patterns"
     },
     {
         text: "Nature",
-        photo: nature,
+        photo: "https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=600",
         path:"nature"
     },
     {
-        text: "Current events",
-        photo: events,
+        text: "Current Events",
+        photo: "https://res.cloudinary.com/unreveal/image/upload/v1678877600/events_ncs4kg.jpg",
         path:"events"
     },
     {
-        text: "Architecture",
-        photo: architect,
+        text: "Architect & Interiors",
+        photo: "https://res.cloudinary.com/unreveal/image/upload/v1678877607/interior_hinyz8.jpg",
         path:"interior"
     },
     {
         text: "Business & Work",
-        photo: business,
+        photo: "https://res.cloudinary.com/unreveal/image/upload/v1678877587/bussiness_w4zh9i.jpg",
         path:"business"
     },
     {
         text: "Animals",
-        photo: animals,
+        photo: "https://images.pexels.com/photos/3860030/pexels-photo-3860030.jpeg?auto=compress&cs=tinysrgb&w=600",
         path:"animals"
     },
     {
-        text: "Tour & travels",
-        photo: travel,
+        text: "Travel",
+        photo: "https://res.cloudinary.com/unreveal/image/upload/v1678877655/travel_okj22p.jpg",
         path:"travel"
     },
     {
-        text: "Fashion",
-        photo: fashion,
+        text: "Fashion & Beauty",
+        photo: "https://res.cloudinary.com/unreveal/image/upload/v1678877591/fashion_qegceb.jpg",
         path:"fashion"
     },
 ]

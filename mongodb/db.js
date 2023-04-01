@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 
-const MongoUri = "mongodb+srv://Abhisha_Kumar_Chittore:056Abhisha@oberno.jkbve.mongodb.net/pixels?retryWrites=true&w=majority"
+const MongoUri = "mongodb+srv://Abhisha_Kumar_Chittore:056Abhisha@unreveal.7vvsncf.mongodb.net/unreveal?retryWrites=true&w=majority"
 
 export default function dbConnect() {
     if (mongoose.connections[0].readyState) {
