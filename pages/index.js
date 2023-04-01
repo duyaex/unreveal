@@ -292,11 +292,12 @@ const trendingTopics=[
                 {
                   searches.map((srch,index)=>{
                     return(
-                      <Link href={`/search/${srch}`}><div key={index} className="flex justify-center items-center font-semibold w-fit px-2 py-1 text-sm space-x-2 md:space-x-4 md:px-3 md:py-2 border md:border border-slate-300 hover:border-black rounded-md">
+                      <div key={index} className="">
+                      <Link href={`/search/${srch}`}><div className="flex justify-center items-center font-semibold w-fit px-2 py-1 text-sm space-x-2 md:space-x-4 md:px-3 md:py-2 border md:border border-slate-300 hover:border-black rounded-md">
                   <p>{srch}</p>
                   <span className="text-xl text-slate-700"><AiOutlineSearch/></span>
                 </div></Link>
-
+                </div>
                     )
                   })
                 }
@@ -349,10 +350,12 @@ const trendingTopics=[
                 {
                   trendingTopics.map((tr,i)=>{
                     return(
-                      <Link href={`/search/${tr.text}`}><div key={i} className="flex w-fit justify-center items-center space-x-2 font-semibold border border-slate-200 md:px-3 px-2  py-1 rounded-md">
+                      <div key={i} className="">
+                      <Link href={`/search/${tr.text}`}><div  className="flex w-fit justify-center items-center space-x-2 font-semibold border border-slate-200 md:px-3 px-2  py-1 rounded-md">
                   <img src={tr.image} className="w-8 h-8 rounded-full" alt={tr.text} />
                   <p>{tr.text}</p>
                 </div></Link>
+                </div>
                     )
                   })
                 }
