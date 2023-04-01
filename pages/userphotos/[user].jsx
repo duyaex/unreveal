@@ -130,10 +130,10 @@ redirectUser()
 </div>
 <div className="flex justify-center">
   <div className="flex justify-center space-x-4">
-  <a href={profile.facebook} target="_blank" ><span className="text-slate-700 hover:text-black cursor-pointer"><BsFacebook/></span></a>
-  <a href={profile.instagram} target="_blank" ><span className="text-slate-700 hover:text-black cursor-pointer"><BsInstagram/></span></a>
-  <a href={profile.twitter} target="_blank" ><span className="text-slate-700 hover:text-black cursor-pointer"><BsTwitter/></span></a>
-  <a href={profile.youtube} target="_blank" ><span className="text-slate-700 hover:text-black cursor-pointer"><BsYoutube/></span></a>
+  <a href={profile.facebook} target="_blank" rel="noreferrer" ><span className="text-slate-700 hover:text-black cursor-pointer"><BsFacebook/></span></a>
+  <a href={profile.instagram} target="_blank" rel="noreferrer" ><span className="text-slate-700 hover:text-black cursor-pointer"><BsInstagram/></span></a>
+  <a href={profile.twitter} target="_blank" rel="noreferrer" ><span className="text-slate-700 hover:text-black cursor-pointer"><BsTwitter/></span></a>
+  <a href={profile.youtube} target="_blank" rel="noreferrer" ><span className="text-slate-700 hover:text-black cursor-pointer"><BsYoutube/></span></a>
   </div>
 </div>
 </div>
