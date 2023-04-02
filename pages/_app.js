@@ -20,7 +20,7 @@ setProgress(40)
 setProgress(100)
   })
  
-}, [])
+}, [router.events])
 
 useEffect(() => {
  async function getAllNotifications(){
@@ -50,7 +50,7 @@ useEffect(() => {
 
   <Navbar notifications={notifications} setNotifications={setNotifications}/> 
  
-  <Component {...pageProps}  />
+  <Component {...pageProps} notifications={notifications} setNotifications={setNotifications} />
 
   </>
 }

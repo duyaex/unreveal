@@ -1,8 +1,5 @@
 import React from 'react'
-import str1 from '../../../Images/str1.jpg'
-import str2 from '../../../Images/str2.jpg'
-import str3 from '../../../Images/str3.jpg'
-import img3 from '../../../Images/img3.jpg'
+
 import { BsArrowRightShort } from 'react-icons/bs'
 import Link from 'next/link'
 import Image from 'next/image'

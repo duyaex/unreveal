@@ -1,8 +1,5 @@
 import React from 'react'
-import cont1 from '../../../Images/cont1.jpg'
-import cont2 from '../../../Images/cont2.jpg'
-import cont3 from '../../../Images/cont3.jpg'
-import cont4 from '../../../Images/cont4.jpg'
+
 import { useRouter } from 'next/router'
 import { ReactPhotoCollage } from "react-photo-collage";
 import Link from 'next/link'
@@ -94,9 +91,9 @@ const router=useRouter()
    <div className="text-center">
  
      <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">No Collections Found</h1>
-     <p className="mt-6 text-base leading-7 text-gray-600">Let's explore other photographers collections.</p>
+     <p className="mt-6 text-base leading-7 text-gray-600">Let&apos;s explore other photographers collections.</p>
      <div className="mt-10 flex items-center justify-center gap-x-6">
-       <Link href={"/"}><button className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's go {" "} &rarr;</button></Link>
+       <Link href={"/"}><button className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let&apos;s go {" "} &rarr;</button></Link>
      </div>
    </div>
  </main>

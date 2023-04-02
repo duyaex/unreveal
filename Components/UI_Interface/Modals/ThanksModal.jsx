@@ -1,6 +1,6 @@
-import Image from 'next/image'
+
 import React,{useState} from 'react'
-import photo from '../../Images/fashion.jpg'
+
 import {BsFacebook,BsYoutube,BsInstagram,BsTwitter} from 'react-icons/bs'
 import {RxCross2} from 'react-icons/rx'
 import Link from 'next/link'
@@ -41,17 +41,17 @@ export default function ThanksModal({photo,setShowModal}) {
             <p className="text-sm">Give a shoutout to user on social media.</p>
             <div className="flex justify-center space-x-4 pt-2">
   <a href={"www.facebook.com"} target="_blank" rel='noreferrer'><span className="text-slate-700 hover:text-black cursor-pointer"><BsFacebook/></span></a>
-  <a href={photo.user.instagram} target="_blank" ><span className="text-slate-700 hover:text-black cursor-pointer"><BsInstagram/></span></a>
-  <a href={photo.user.twitter} target="_blank" ><span className="text-slate-700 hover:text-black cursor-pointer"><BsTwitter/></span></a>
-  <a href={photo.user.youtube} target="_blank" ><span className="text-slate-700 hover:text-black cursor-pointer"><BsYoutube/></span></a>
+  <a href={photo.user.instagram} target="_blank" rel='noreferrer' ><span className="text-slate-700 hover:text-black cursor-pointer"><BsInstagram/></span></a>
+  <a href={photo.user.twitter} target="_blank" rel='noreferrer'><span className="text-slate-700 hover:text-black cursor-pointer"><BsTwitter/></span></a>
+  <a href={photo.user.youtube} target="_blank" rel='noreferrer'><span className="text-slate-700 hover:text-black cursor-pointer"><BsYoutube/></span></a>
   </div>
           </div>
         </div>
         <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-0 pt-0 lg:mt-2 lg:pt-2 sm:mt-0 text-center text-sm lg:text-base sm:text-left">
          
           <Link href={`/userphotos/${photo.user._id}`}><div className="space-y-2">
-            <p>Let's checkout more marvellous photos of the photographer</p>
-            <button className='px-3 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm text-white font-semibold'>Let's see {" "}&rarr;</button>
+            <p>Let&apos;s checkout more marvellous photos of the photographer</p>
+            <button className='px-3 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-sm text-white font-semibold'>Let&apos;s see {" "}&rarr;</button>
           </div></Link>
         
         </div>

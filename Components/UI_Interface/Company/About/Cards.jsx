@@ -1,7 +1,5 @@
 import React from 'react'
-import curate from '../../../Images/curate.jpg'
-import community from '../../../Images/community.jpg'
-import fuel from '../../../Images/fuel.jpg'
+
 import Image from 'next/image'
 export default function Cards() {
   return (

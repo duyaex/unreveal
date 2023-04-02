@@ -60,7 +60,7 @@ useEffect(() => {
 
   }
   relCltnsAndPhotos()
-}, [])
+})
 
 useEffect(() => {
   // console.log("
@@ -75,7 +75,7 @@ useEffect(() => {
   }
 
 
-}, [])
+}, [photo,userId]);
 useEffect(() => {
     
   const changer=
@@ -143,7 +143,13 @@ const send=await fetch(`${baseUrl}/api/user/getuser`,{
   }
 })
 const recieve=await send.json()
-const req=await fetch(`${baseUrl}/api/photostudio/${id}`)
+const req=await fetch(`${baseUrl}/api/photostudio/id`,{
+  method: "POST",
+  headers:{"Content-Type":"application/json"},
+  body:JSON.stringify({
+    id:id
+  })
+})
 const res=await req.json()
 
 return{

@@ -43,7 +43,7 @@ useEffect(() => {
   setPageCount(res.pagination.pageCount)
   }
   fetchCtgData()
-}, [query])
+}, [query,page])
 
 
     

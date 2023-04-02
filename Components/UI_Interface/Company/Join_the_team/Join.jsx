@@ -1,11 +1,7 @@
 import React from "react";
 import Hire from "./Hire";
 import ImageFlow from "./ImageFlow";
-import fours from "../../../Images/fours.webp";
-import Image from "next/image";
-import Link from "next/link";
 
-import { BsArrowRightShort } from "react-icons/bs";
 import WorkWithUs from "./WorkWithUs";
 // Add liked and viewed images in this page
 // Rectify all the pages ---> 28/02/2023

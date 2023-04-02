@@ -27,7 +27,7 @@ import { parseCookies } from 'nookies'
 import AllNotifications from "./AllNotifications";
 
 export default function Navbar({notifications,setNotifications}) {
-  console.log("the navbar nots",notifications)
+  // console.log("the navbar nots",notifications)
   const [navbar, setNavbar] = useState(false);
 const {token}= parseCookies()
 const [deviceWidth, setDeviceWidth] = useState(0)
@@ -46,7 +46,7 @@ const [showNots, setShowNots] = useState(false)
     setDeviceWidth(window.innerWidth)
     window.addEventListener("scroll", changeBackgroundColor);
     return () => window.removeEventListener("scroll", changeBackgroundColor);
-  });
+  },[]);
 
   const router = useRouter();
   const [menu, setMenu] = useState(false);

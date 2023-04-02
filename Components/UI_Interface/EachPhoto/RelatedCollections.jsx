@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-import img from '../../Images/bussiness.jpg'
+
 import { ReactPhotoCollage } from "react-photo-collage";
 
 export default function RelatedCollections({relctn}) {

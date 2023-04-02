@@ -1,10 +1,10 @@
-import Link from 'next/link'
+
 import React,{useState} from 'react'
-import fulllogo from '../../Components/Images/fulllogo.png'
+
 import { useRouter } from 'next/router'
 import Loader from '../../Components/UI_Interface/Files/Loader'
 import baseUrl from '../../mongodb/baseUrl'
-import Cookies from 'js-cookie'
+
 import { parseCookies } from 'nookies'
 import Head from 'next/head'
 export default function ForgetPassword() {
@@ -95,7 +95,7 @@ const [load, setLoad] = useState(false)
     <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
   <div className="w-full max-w-md space-y-8">
     <div>
-      <img className="mx-auto h-12 w-auto" src={fulllogo.src} alt="Your Company"/>
+      <img className="mx-auto h-12 w-auto" src={"https://res.cloudinary.com/unreveal/image/upload/v1678877600/fulllogo_furhgt.png"} alt="Your Company"/>
       <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Forgot your password</h2>
       
     </div>
@@ -105,7 +105,7 @@ const [load, setLoad] = useState(false)
         <div>
           <label htmlFor="email-address" className="sr-only">Email address</label>
           <input id="email-address" name="email" type="email" onChange={onChange} autoComplete="email" required className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Email address"/>
-        <p className='text-xs text-slate-600 pl-1 pt-1'>First verify that it's you *</p>
+        <p className='text-xs text-slate-600 pl-1 pt-1'>First verify that it&apos;s you *</p>
         </div>
         {
             correct &&

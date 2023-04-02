@@ -1,12 +1,5 @@
 import React from 'react'
-import rch1 from '../../../Images/rch1.jpg'
-import rch2 from '../../../Images/rch2.jpg'
-import rch3 from '../../../Images/rch3.jpg'
-import team1 from '../../../Images/team1.jpg'
-import parrot from '../../../Images/parrot.jpg'
-import Animals from '../../../Images/Animals.jpg'
-import Nature from '../../../Images/Nature.jpg'
-import fulllogo from '../../../Images/fulllogo.png'
+
 import Image from 'next/image'
 
 export default function ImagesViewDesign() {

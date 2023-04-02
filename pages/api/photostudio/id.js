@@ -5,7 +5,7 @@ dbConnect()
 
 export default async function GetEachPhoto(req, res) {
 
-    const { id } = req.query
+    const { id } = req.body
     try {
 
         const docs = await Photo.findOne({ _id: id }).populate("user")

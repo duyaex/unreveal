@@ -1,12 +1,12 @@
 import React,{useState,useEffect} from 'react'
 import { parseCookies } from 'nookies'
 import baseUrl from '../../mongodb/baseUrl'
-import Profile from '../../Components/UI_Interface/Account/MyProfile/Profile'
-import profiles from '../../Components/Images/profile.png'
+
+
 import MyCollections from '../../Components/UI_Interface/Account/MyCollection/MyCollections'
 import Link from 'next/link'
 import Image from 'next/image'
-import {MdEdit} from 'react-icons/md'
+
 import { useRouter } from 'next/router'
 import {AiOutlineAppstoreAdd} from 'react-icons/ai'
 import {BsFacebook,BsYoutube,BsInstagram,BsTwitter,BsImages, BsImage} from 'react-icons/bs'
@@ -57,21 +57,22 @@ const unfollowTheUser=async()=>{
  
 }
 
-const redirectUser=()=>{
-  console.log("The router",router.asPath)
-  if(router.asPath===`/userphotos/${userId}`){
-   
-    router.push({
-      pathname:"/account/myImages"
-    })
-  }
-  else{
-    console.log("User is not user")
-  }
 
-}
 
 useEffect(() => {
+  const redirectUser=()=>{
+    console.log("The router",router.asPath)
+    if(router.asPath===`/userphotos/${userId}`){
+     
+      router.push({
+        pathname:"/account/myImages"
+      })
+    }
+    else{
+      console.log("User is not user")
+    }
+  
+  }
   if(profile.followers.includes(userId)){
     setFollowed(true)
   }
@@ -79,7 +80,7 @@ useEffect(() => {
     setFollowed(false); 
   }
 redirectUser()
-}, [])
+},[profile.followers, userId,router])
 
 
 
@@ -102,7 +103,7 @@ redirectUser()
 <div className="w-4/6 ">
     <div className="flex justify-center w-full">
 
-<img src={profile.profile_image || profiles.src} className="w-48 h-48 rounded-full object-cover object-top " alt="profile" />
+<img src={profile.profile_image || "https://res.cloudinary.com/unreveal/image/upload/v1678877614/profile_agyzhd.png"} className="w-48 h-48 rounded-full object-cover object-top " alt="profile" />
     </div>
 <h2 className='text-4xl font-semibold space-x-2 flex justify-center w-full'><span>{profile.firstName}</span><span>{profile.lastName}</span></h2>
 <div className="flex justify-center w-full py-2">
@@ -175,9 +176,9 @@ redirectUser()
   <div className="text-center">
 
     <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">No Photos Found</h1>
-    <p className="mt-6 text-base leading-7 text-gray-600">Let's explore other photographer's high resolution photos.</p>
+    <p className="mt-6 text-base leading-7 text-gray-600">Let&apos;s explore other photographer&apos;s high resolution photos.</p>
     <div className="mt-10 flex items-center justify-center gap-x-6">
-      <Link href={"/"}><button className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's see {" "} &rarr;</button></Link>
+      <Link href={"/"}><button className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let&apos;s see {" "} &rarr;</button></Link>
     </div>
   </div>
 </main>

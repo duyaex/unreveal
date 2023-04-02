@@ -49,7 +49,7 @@ export default function Home({ photo,searches,cltns }) {
     setDeviceHeight(height)
     setDeviceWidth(width)
     console.log("The widdth is ",width,"the height",height)
-  }, []);
+  },[page,totalDocs]);
   
 useEffect(() => {
   if(term.length){
@@ -223,7 +223,7 @@ const trendingTopics=[
                     src={
                       photo.user.profile_image ||
                        "https://res.cloudinary.com/unreveal/image/upload/v1678877614/profile_agyzhd.png"}
-                    className="w-8 h-8 md:w-10 md:h-10 object-top bg-white pt-[0.1rem] rounded-full object-cover"
+                    className="w-8 h-8 md:w-10 md:h-10 object-top bg-white rounded-full object-cover"
                     alt=""
                   /></Link>
                   <span className="">

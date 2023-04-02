@@ -36,7 +36,7 @@ export default function CollectionsDynamic({ctn}) {
 
 
     
-    }, [])
+    },[ctn.Images])
     
     // console.log("hello",imageArr[8])
 

@@ -1,6 +1,6 @@
 {
   "extends": "next/core-web-vitals",
-  "plugins": ["react-hooks/recommended"],
+  "plugins": ["react-hooks"],
   "rules": {
     // Other rules
     "@next/next/no-img-element": "off",

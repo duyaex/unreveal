@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img1 from "../../../Images/str1.jpg";
+
 import { MdCancel } from "react-icons/md";
 import baseUrl from "../../../../mongodb/baseUrl";
 import { useRouter } from "next/router";

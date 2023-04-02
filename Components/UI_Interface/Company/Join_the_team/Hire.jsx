@@ -1,9 +1,5 @@
 import React from 'react'
 
-import team1 from '../../../Images/team1.jpg'
-import team2 from '../../../Images/team2.jpg'
-import team3 from '../../../Images/team3.jpg'
-import team4 from '../../../Images/team4.jpg'
 import {BsArrowRightShort} from 'react-icons/bs'
 import Image from 'next/image'
 import Link from 'next/link'

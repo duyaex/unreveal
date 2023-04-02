@@ -1,11 +1,4 @@
 import React from 'react'
-import rch1 from '../../../Images/rch1.jpg'
-import rch2 from '../../../Images/rch2.jpg'
-import rch3 from '../../../Images/rch3.jpg'
-import team1 from '../../../Images/team1.jpg'
-import parrot from '../../../Images/parrot.jpg'
-
-import fulllogo from '../../../Images/fulllogo.png'
 import Image from 'next/image'
 
 export default function NewJoiners({allusers}) {
@@ -59,7 +52,7 @@ export default function NewJoiners({allusers}) {
         </span> </h1>
     {/*Unreveal's logo */}
     <div className="py-2 ">
-       <Image width={300} height={200} src={fulllogo.src} className="w-32" alt="Unreveal" />
+       <Image width={300} height={200} src={"https://res.cloudinary.com/unreveal/image/upload/v1678877600/fulllogo_furhgt.png"} className="w-32" alt="Unreveal" />
 
     </div>
     
@@ -119,9 +112,9 @@ export default function NewJoiners({allusers}) {
 <div className="images   md:py-12 grid grid-cols-2 space-x-2 md:px-4 md:space-x-4 md:space-y-4">
 
 
-<Image width={300} height={200} src={parrot.src} className="w-full rounded-sm shadow-xl  bg-slate-700 bg-opacity-10 opacity-100 md:h-32  lg:h-56 h-24 object-cover" alt="image" />
-<Image width={300} height={200} src={rch3.src} className="w-full  rounded-sm shadow-xl bg-slate-700 bg-opacity-10  md:h-32  lg:h-56 h-24 object-cover" alt="image" />
-<Image width={300} height={200} src={rch1.src} className="w-full  rounded-sm shadow-xl bg-slate-700 bg-opacity-10  md:h-32  hidden md:block lg:h-56 h-24 object-cover" alt="image" />
+<Image width={300} height={200} src={"https://res.cloudinary.com/unreveal/image/upload/v1678877613/parrot_pdrlrm.jpg"} className="w-full rounded-sm shadow-xl  bg-slate-700 bg-opacity-10 opacity-100 md:h-32  lg:h-56 h-24 object-cover" alt="image" />
+<Image width={300} height={200} src={"https://res.cloudinary.com/unreveal/image/upload/v1678877621/rch3_rbrhha.jpg"} className="w-full  rounded-sm shadow-xl bg-slate-700 bg-opacity-10  md:h-32  lg:h-56 h-24 object-cover" alt="image" />
+<Image width={300} height={200} src={"https://res.cloudinary.com/unreveal/image/upload/v1678877634/rch1_mmy3af.jpg"} className="w-full  rounded-sm shadow-xl bg-slate-700 bg-opacity-10  md:h-32  hidden md:block lg:h-56 h-24 object-cover" alt="image" />
 
 
 </div>

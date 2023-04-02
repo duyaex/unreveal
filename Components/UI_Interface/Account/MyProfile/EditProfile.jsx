@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import profile from '../../../Images/profile.png'
+
 import baseUrl from '../../../../mongodb/baseUrl'
 import { parseCookies } from 'nookies'
 import { useRouter } from 'next/router'
@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 export default function EditProfileComponent({user}) {
   const router=useRouter()
 const [file, setFile] = useState()
-const [img, setImg] = useState(user.profile_image|| profile.src)
+const [img, setImg] = useState(user.profile_image|| "https://res.cloudinary.com/unreveal/image/upload/v1678877614/profile_agyzhd.png")
 // const [pr, setPr] = useState([])
 const {token}=parseCookies()
 const [cred, setCred] = useState({

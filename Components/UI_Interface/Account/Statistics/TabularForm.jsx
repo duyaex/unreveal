@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import imgs from '../../../Images/Animals.jpg'
+
 import {AiFillEye, AiFillHeart,AiOutlineDownload} from 'react-icons/ai'
 export default function TabularForm({userImgs}) {
   return (
@@ -27,7 +27,7 @@ export default function TabularForm({userImgs}) {
               <div className="flex justify-center">
                 <div className="">
 
-                <Image src={img.url} width={200} height={300} className="w-32 h-20 md:w-48 md:h-28 min-[425px]:w-32 object-cover object-center"/>
+                <Image src={img.url} width={200} height={300} className="w-32 h-20 md:w-48 md:h-28 min-[425px]:w-32 object-cover object-center" alt={img.title}/>
                 <p className='text-xs md:text-sm text-center pt-1 font-bold' title={img._id}>Photo ID</p>
                 </div>
 
@@ -45,19 +45,19 @@ export default function TabularForm({userImgs}) {
                 <div className="flex -space-x-2 overflow-hidden">
                   {
                     img.likes.length>0?
-                    <img className="inline-block h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 rounded-full ring-2 object-cover object-top ring-white" src={img.likes[0].profile_image} alt=""/>:<span>0</span>
+                    <img className="inline-block h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 rounded-full ring-2 object-cover object-top ring-white" src={img.likes[0].profile_image} alt={"Unreveal"}/>:<span>0</span>
                   }
                   {
                     img.likes.length>1?
-                    <img className="inline-block h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 rounded-full ring-2 object-cover object-top ring-white" src={img.likes[1].profile_image} alt=""/>:""
+                    <img className="inline-block h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 rounded-full ring-2 object-cover object-top ring-white" src={img.likes[1].profile_image} alt={"Unreveal"}/>:""
                   }
                   {
                     img.likes.length>2?
-                    <img className="inline-block h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 rounded-full ring-2 object-cover object-top ring-white" src={img.likes[2].profile_image} alt=""/>:""
+                    <img className="inline-block h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 rounded-full ring-2 object-cover object-top ring-white" src={img.likes[2].profile_image} alt={"Unreveal"}/>:""
                   }
                   {
                     img.likes.length>3?
-                    <img className="inline-block h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 rounded-full ring-2 object-cover object-top ring-white" src={img.likes[3].profile_image} alt=""/>:""
+                    <img className="inline-block h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10 rounded-full ring-2 object-cover object-top ring-white" src={img.likes[3].profile_image} alt={"Unreveal"}/>:""
                   }
 
 </div>

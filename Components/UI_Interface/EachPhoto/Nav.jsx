@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import React,{useState,useEffect} from 'react'
-import img2 from '../../Images/img2.jpg'
 import {AiFillHeart,AiOutlineAppstoreAdd} from 'react-icons/ai'
 import {HiFolderDownload} from 'react-icons/hi'
 import { createApi } from 'unsplash-js'

@@ -20,7 +20,7 @@ export default function Photo({image,deviceWidth,deviceHeight}) {
     console.log("image has loaded",image._id)
   }
   
-  }, [])
+  })
   const {token}=parseCookies()
   
   const imageStateHolder=()=>{

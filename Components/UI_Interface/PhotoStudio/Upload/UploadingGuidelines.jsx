@@ -34,7 +34,7 @@ export default function UploadingGuidelines() {
 
         <div className="border-t border-gray-200 pt-4">
           <dt className="font-medium text-gray-900">Photos Size</dt>
-          <dd className="mt-2 text-sm text-gray-500">Photo's size should not be greater than <span className='font-semibold'>10 MB</span>. </dd>
+          <dd className="mt-2 text-sm text-gray-500">Photo&apos;s size should not be greater than <span className='font-semibold'>10 MB</span>. </dd>
         </div>
 
         <div className="border-t border-gray-200 pt-4">
@@ -46,7 +46,7 @@ export default function UploadingGuidelines() {
     <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
       <Image width={500} height={600} src="https://images.unsplash.com/photo-1570628431481-cc85959e662f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b3JpZ2luYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." className="rounded-lg bg-gray-100"/>
       <Image width={500} height={600} src="https://images.unsplash.com/photo-1590962677235-26b1195bb96e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dmlvbGVuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Top down view of walnut card tray with embedded magnets and card groove." className="rounded-lg bg-gray-100"/>
-      <Image width={500} height={600} src="https://res.cloudinary.com/unreveal/image/upload/v1679028208/pexels-photo-886051_llx7ig.jpg"/>
+      <Image width={500} height={600} src="https://res.cloudinary.com/unreveal/image/upload/v1679028208/pexels-photo-886051_llx7ig.jpg" alt='Unreveal'/>
       <Image width={500} height={600} src="https://res.cloudinary.com/unreveal/image/upload/v1678877656/Birds_wgcojc.jpg" alt="Walnut card tray filled with cards and card angled in dedicated groove." className="rounded-lg bg-gray-100"/>
     </div>
   </div>

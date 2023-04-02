@@ -2,8 +2,8 @@ import React from 'react'
 import Cards from './Cards'
 import Signup from './Signup'
 import StartBrowse from './StartBrowse'
-import fours from '../../../Images/fours.webp'
-import Image from 'next/image'
+
+
 import Boost from './Boost'
 import WhatWeAre from '../Reach_to_us/WhatWeAre'
 

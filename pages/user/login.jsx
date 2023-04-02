@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React,{useState} from 'react'
-import fulllogo from '../../Components/Images/fulllogo.png'
+
 import { useRouter } from 'next/router'
 import Loader from '../../Components/UI_Interface/Files/Loader'
 import baseUrl from '../../mongodb/baseUrl'
@@ -78,7 +78,7 @@ const [load, setLoad] = useState(false)
     <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
   <div className="w-full max-w-md space-y-8">
     <div>
-      <img className="mx-auto h-12 w-auto" src={fulllogo.src} alt="Your Company"/>
+      <img className="mx-auto h-12 w-auto" src={"https://res.cloudinary.com/unreveal/image/upload/v1678877600/fulllogo_furhgt.png"} alt="Your Company"/>
       <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Login to your account</h2>
       <p className="mt-2 text-center  text-gray-600">
         Or{" "}

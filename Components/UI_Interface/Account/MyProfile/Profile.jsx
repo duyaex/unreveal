@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import profiles from '../../../Images/profile.png'
+
 import {MdEdit} from 'react-icons/md'
 import {BsFacebook,BsYoutube,BsInstagram,BsTwitter} from 'react-icons/bs'
 import {SiManageiq,SiWalkman} from 'react-icons/si'
@@ -33,7 +33,7 @@ export default function Profile({profile}) {
   useEffect(() => {
    console.log("hello using from profile component")
    getFollowers()
-  }, [])
+  })
   
   const handleFo=()=>{
     setToggle('followers')
@@ -51,7 +51,7 @@ export default function Profile({profile}) {
 <div className="w-4/6 ">
     <div className="flex justify-center w-full">
 
-<Image width={600} height={400} src={profile.profile_image || profiles.src} className="w-48 h-48 rounded-full object-cover object-top " alt="profile" />
+<Image width={600} height={400} src={profile.profile_image || "https://res.cloudinary.com/unreveal/image/upload/v1678877614/profile_agyzhd.png"} className="w-48 h-48 rounded-full object-cover object-top " alt="profile" />
     </div>
 <h2 className='text-4xl font-semibold space-x-2 flex justify-center w-full'><span>{profile.firstName}</span><span>{profile.lastName}</span></h2>
 <div className="flex justify-center w-full py-2">
