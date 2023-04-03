@@ -1,3 +1,3 @@
-const baseUrl = process.env.NODE_ENV === 'production' ? "https://unrevealpics.vercel.app" : "http://localhost:3000"
+const baseUrl = "https://unrevealpics.vercel.app"
 
 export default baseUrl;
