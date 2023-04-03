@@ -188,14 +188,14 @@ const [showNots, setShowNots] = useState(false)
                         About
                       </li>
                     </Link>
-                    {/* <Link href={"/Company/join"}>
+                    <Link href={"/Company/join"}>
                       <li
                         onClick={() => setMenu(false)}
                         className="hover:text-black"
                       >
                         Join the team
                       </li>
-                    </Link>  */}
+                    </Link> 
                     <Link href={"/Company/reach"}>
                       <li
                         onClick={() => setMenu(false)}
