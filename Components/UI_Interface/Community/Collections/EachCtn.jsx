@@ -1,11 +1,9 @@
 import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
 
-// import community from '../../../Images/community.jpg'
-// import fuel from '../../../Images/fuel.jpg'
+
 import {useRouter} from 'next/router'
 import { ReactPhotoCollage } from "react-photo-collage";
+
 export default function EachCtn({ctn}) {
   // console.log("The ctns",ctn[0])
   const router=useRouter()
@@ -40,6 +38,7 @@ export default function EachCtn({ctn}) {
     <div className="rounded-md">
 {/* <img src={curate.src} alt="cltn" /> */}
 <ReactPhotoCollage className="rounded-md" {...setting} />
+{/* <ReactCollage width={"300"} height={"350"} photos={ctn.cover_images}/> */}
     </div>
     <div onClick={()=>router.push(`/collections/${ctn._id}`)} className="">
   <h2 className=' text-lg font-bold text-black pt-2 pl-2'>{ctn.title}</h2>

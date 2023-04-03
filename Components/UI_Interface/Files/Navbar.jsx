@@ -79,14 +79,14 @@ const [showNots, setShowNots] = useState(false)
                   : "  flex justify-between items-center  w-full  p-3 text-slate-800 bg-white"
               }
             >
-              <div className="">
-                <Link href={"/"}>
+               <div onClick={()=>router.push("/")} className="">
+               
                   
                      <img className="md:hidden w-12"  src={"https://res.cloudinary.com/unreveal/image/upload/v1678877605/logo_scaomd.png"} alt="Unrveal" />
                     <img className="hidden md:block md:w-36 lg:w-44 xl:w-48 "  src={"https://res.cloudinary.com/unreveal/image/upload/v1678877600/fulllogo_furhgt.png"} alt="Unreveal" />
                    
                     {/* <Image src={fulllogo} alt=""/> */}
-                </Link>
+               
               </div>
               <SearchBox />
               {/*Profile Icon */}
@@ -257,7 +257,7 @@ const [showNots, setShowNots] = useState(false)
                       className="hover:text-black"
                     >
                       Unreveal Awards
-                    </li> </Link>
+                    </li></Link>
                     <li className="flex items-center space-x-4 py-2 text-lg">
                       <span className="hover:text-black">
                         <FaFacebook />

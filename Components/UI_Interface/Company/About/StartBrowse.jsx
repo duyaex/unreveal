@@ -1,9 +1,10 @@
 import React from 'react'
-
+import { useRouter } from 'next/router'
 import { BsArrowRightShort } from 'react-icons/bs'
 import Link from 'next/link'
 import Image from 'next/image'
 export default function StartBrowse() {
+  const router=useRouter()
   return (
     <>
     
@@ -13,8 +14,8 @@ export default function StartBrowse() {
     <h1 className='font-bold text-2xl py-4 md:text-4xl'>Photos for everyone</h1>
     <p className='font-semibold text-slate-700'>Over 3 million free high-resolution images brought to you by the world’s most generous community of photographers.</p>
     <div className="buttons space-x-1 min-[425px]:space-x-2 md:space-x-3 flex flex-wrap text-sm  space-y-2 min-[375px]:space-y-0">
-    <Link href="/"><button className='group flex justify-center items-center space-x-2 bg-black rounded-sm py-2 px-3 font-semibold border-2 border-black text-white'><span>Start Browsing</span><span className='group-hover:translate-x-2 transition-all duration-200 ease-out'><BsArrowRightShort/></span>  </button></Link>
-    <Link href="/photostudio/preupload"><button className='group flex justify-center items-center space-x-2 bg-white rounded-sm py-2 px-3 font-semibold border-2 border-black text-black'><span>Become a contributor</span><span className='group-hover:translate-x-2 transition-all duration-200 ease-out'><BsArrowRightShort/></span>  </button></Link>
+    <button onClick={()=>router.push("/")} className='group flex justify-center items-center space-x-2 bg-black rounded-sm py-2 px-3 font-semibold border-2 border-black text-white'><span>Start Browsing</span><span className='group-hover:translate-x-2 transition-all duration-200 ease-out'><BsArrowRightShort/></span></button>
+    <Link href="/photostudio/preupload"><button className='group flex justify-center items-center space-x-2 bg-white rounded-sm py-2 px-3 font-semibold border-2 border-black text-black'><span>Become a contributor</span><span className='group-hover:translate-x-2 transition-all duration-200 ease-out'><BsArrowRightShort/></span></button></Link>
 
     </div>
 </div>

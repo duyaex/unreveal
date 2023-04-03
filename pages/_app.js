@@ -5,6 +5,7 @@ import '../styles/globals.css'
 import { parseCookies } from 'nookies';
 import LoadingBar from 'react-top-loading-bar'
 import {useRouter} from 'next/router';
+import Head from 'next/head';
 
 
 function MyApp({ Component, pageProps }) {
@@ -41,6 +42,14 @@ useEffect(() => {
 
 
   return <>
+  <Head>
+        <title>Unreveal | Creators Everywhere</title>
+        <meta
+          name="description"
+          content="Unreveal is the site for all visuals to easily download free high resolution  photos and use them for various purposes like creating your own app or website. It has easy customization, optimized and ultra resolution photos & images for free. It cost you no money. Photography is not only a hobby but it can also be your carrier."
+        />
+        <link rel="icon" href="/favicon.ico" />
+  </Head>
    <LoadingBar
         color='#26425d'
         progress={progress}

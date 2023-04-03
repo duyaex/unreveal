@@ -22,9 +22,8 @@ export default function Footer() {
         {/* <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Company</h2> */}
         <nav className="list-none mb-10">
           <h2 className=' font-semibold text-black'>Company</h2>
-          <Link href="/Company/about"><li>
-            <p className="text-gray-600 hover:text-gray-800">About</p>
-          </li></Link>
+          <li><Link href="/Company/about"><p className="text-gray-600 hover:text-gray-800">About</p></Link>
+          </li>
           {/* <li>
             <a className="text-gray-600 hover:text-gray-800">Join the community</a>
           </li> */}
