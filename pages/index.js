@@ -415,7 +415,7 @@ export async function getServerSideProps(context) {
   {/*Recent Searches */}
   const request = await fetch(`${baseUrl}/api/photostudio/random`);
   const response = await request.json();
-  console.log("The random photo", response.response.results);
+  // console.log("The random photo", response.response.results);
   const searches=[]
   const data=fs.readFileSync('recent_searches.json')
   const objData = JSON.parse(data)

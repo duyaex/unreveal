@@ -133,7 +133,7 @@ useEffect(() => {
 }
 export async function getServerSideProps(ctx){
 const {token}=parseCookies(ctx)
-const id=ctx.query.id
+const photoId=ctx.query.id
 
 if(token){
 const send=await fetch(`${baseUrl}/api/user/getuser`,{
@@ -147,7 +147,7 @@ const req=await fetch(`${baseUrl}/api/photostudio/id`,{
   method: "POST",
   headers:{"Content-Type":"application/json"},
   body:JSON.stringify({
-    id:id
+    id:photoId
   })
 })
 const res=await req.json()
@@ -161,7 +161,13 @@ return{
 }
 }
 else{
-  const req=await fetch(`${baseUrl}/api/photostudio/${id}`)
+  const req=await fetch(`${baseUrl}/api/photostudio/id`,{
+    method: "POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({
+      id:photoId
+    })
+  })
 const res=await req.json()
 return{
   props:{
