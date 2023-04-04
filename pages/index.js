@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import baseUrl from "../mongodb/baseUrl";
+
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsFillEyeFill, BsFillBagPlusFill,BsHeartFill } from "react-icons/bs";
 import fs from 'fs';
@@ -15,7 +15,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Category from "../Components/UI_Interface/Navigation_Bar/Category";
 import Link from "next/link";
-
+const baseUrl = process.env.NODE_ENV === "production" ? "https://unrevealakc.vercel.app" : "http://localhost:3000"
 export default function Home({ photo,searches,cltns }) {
   const router = useRouter();
   const [term, setTerm] = useState("");
