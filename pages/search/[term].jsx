@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import { useRouter } from 'next/router'
 
 import Loader from '../../Components/UI_Interface/Files/Loader'
-// import fs from 'fs';
+import fs from 'fs';
 import Head from 'next/head';
 import * as Realm from 'realm-web'
 import SrchPhotos from '../../Components/UI_Interface/Photo_Section/SrchPhotos';
@@ -103,18 +103,18 @@ const addToSrchReqPh=async()=>{
 export async function getServerSideProps(ctx){
 const {term}=ctx.query
 console.log("query ",term)
-//   const srchArr=[]
-// const inData=fs.readFileSync('recent_searches.json')
-// // console.log("the initial data ",JSON.parse(inData))
-// const objData=JSON.parse(inData)
-// const addSrch=[`${term}`]
-//   for(let key in objData){
-//     srchArr.push(objData[key])
-//   }
-//   // console.log("the srchArr",srchArr)
-// const addingData=srchArr.concat(addSrch)
-// // console.log("the finale data is ",addingData)
-// fs.writeFileSync('recent_searches.json',JSON.stringify(addingData),()=>{})
+  const srchArr=[]
+const inData=fs.readFileSync('recent_searches.json')
+// console.log("the initial data ",JSON.parse(inData))
+const objData=JSON.parse(inData)
+const addSrch=[`${term}`]
+  for(let key in objData){
+    srchArr.push(objData[key])
+  }
+  // console.log("the srchArr",srchArr)
+const addingData=srchArr.concat(addSrch)
+// console.log("the finale data is ",addingData)
+fs.writeFileSync('recent_searches.json',JSON.stringify(addingData),()=>{})
 
   return{
     props:{
