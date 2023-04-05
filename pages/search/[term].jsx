@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react'
 import { useRouter } from 'next/router'
 
 import Loader from '../../Components/UI_Interface/Files/Loader'
-import fs from 'fs';
+// import fs from 'fs';
 import Head from 'next/head';
 import * as Realm from 'realm-web'
 import SrchPhotos from '../../Components/UI_Interface/Photo_Section/SrchPhotos';
