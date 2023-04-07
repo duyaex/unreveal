@@ -1,5 +1,6 @@
 import fs from 'fs'
-export default function AllSrchesGetAndPost(req, res) {
+import path from 'path';
+export default async function AllSrchesGetAndPost(req, res) {
     if (req.method === "GET") {
         getAllSearches(req, res)
     }
@@ -10,7 +11,8 @@ export default function AllSrchesGetAndPost(req, res) {
 }
 const getAllSearches = async(req, res) => {
     const searches = []
-    const data = await fs.readFileSync('recent_searches.json')
+    const filePath = path.join(process.cwd(), 'public', 'recent_searches.json');
+    const data = await fs.readFileSync(filePath)
     const objData = await JSON.parse(data)
     for (let key in objData) {
         searches.push(objData[key])
@@ -24,7 +26,8 @@ const getAllSearches = async(req, res) => {
 const addToSrches = async(req, res) => {
     const { term } = req.body
     const srchArr = []
-    const inData = await fs.readFileSync('recent_searches.json')
+    const filePath = path.join(process.cwd(), 'public', 'recent_searches.json');
+    const inData = await fs.readFileSync(filePath)
         // console.log("the initial data ",JSON.parse(inData))
     const objData = await JSON.parse(inData)
     const addSrch = [`${term}`]
@@ -34,7 +37,7 @@ const addToSrches = async(req, res) => {
     // console.log("the srchArr",srchArr)
     const addingData = srchArr.concat(addSrch)
         // console.log("the finale data is ",addingData)
-    await fs.writeFileSync('recent_searches.json', JSON.stringify(addingData), () => {})
+    await fs.writeFileSync(filePath, JSON.stringify(addingData), () => {})
     await res.status(200).json({
         success: true,
         message: "Search has been added"
