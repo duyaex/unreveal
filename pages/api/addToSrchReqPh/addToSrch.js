@@ -1,5 +1,8 @@
 import fs from 'fs'
 export default function AddToSearchRequirePhotos(req, res) {
+    if (req.method === "GET") {
+        getAllReqPhSrches(req, res);
+    }
     if (req.method === "POST") {
         addToSrch(req, res)
     }
@@ -38,4 +41,18 @@ const clearAllSrches = async(req, res) => {
         success: true,
         message: "Search has been cleared"
     })
+}
+
+const getAllReqPhSrches = async(req, res) => {
+    const searches = []
+    const data = fs.readFileSync('search_require_photos.json')
+    const objData = await JSON.parse(data)
+    for (let key in objData) {
+        searches.push(objData[key])
+    }
+    await res.status(200).json({
+        success: true,
+        searches
+    })
+
 }

@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import {TbCameraPlus} from 'react-icons/tb'
 
-import fs from 'fs'
+
 import { parseCookies } from 'nookies';
 import Image from 'next/image'
 import Loader from '../../Components/UI_Interface/Files/Loader'
@@ -214,16 +214,12 @@ export async function getServerSideProps(ctx){
     })
     res.end()
   }
-  const searches=[]
-  const data=fs.readFileSync('search_require_photos.json')
-  const objData = JSON.parse(data)
-  for(let key in objData){
-    searches.push(objData[key])
-  }
-
+ {/*Getting all photo require searches */}
+ const req2 = await fetch(`${baseUrl}/api/addToSrchReqph/addToSrch`);
+ const res2 = await req2.json();
   return{
     props:{
-      searches:searches
+      searches:res2.searches
     }
   }
 }

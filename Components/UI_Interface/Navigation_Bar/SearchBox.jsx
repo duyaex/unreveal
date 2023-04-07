@@ -81,7 +81,7 @@ const handleAutoSrch=(tag)=>{
             <AiOutlineSearch />
           </div>
           <div className="  w-full flex justify-center  "> 
-        <div className={autoComplete.length>0?" bg-white text-slate-500 list-none absolute px-4 shadow-md text-sm  top-8 left-0 w-full ":"hidden"}>
+        <div className={autoComplete.length>0?" bg-white text-slate-500 list-none absolute px-4 pb-2 shadow-md text-sm  top-8 left-0 w-full ":"hidden"}>
 
         {
     autoComplete.length>0 ? autoComplete.map((field,index)=>{

@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsFillEyeFill, BsFillBagPlusFill,BsHeartFill } from "react-icons/bs";
-import fs from 'fs';
+
 import * as Realm from 'realm-web'
 import Photos from "../Components/UI_Interface/Photo_Section/Photos";
 import Footer from "../Components/UI_Interface/Files/Footer";
@@ -416,12 +416,10 @@ export async function getServerSideProps(context) {
   const request = await fetch(`${baseUrl}/api/photostudio/random`);
   const response = await request.json();
   console.log("The random photo", response);
-  const searches=[]
-  const data=fs.readFileSync('recent_searches.json')
-  const objData = JSON.parse(data)
-  for(let key in objData){
-    searches.push(objData[key])
-  }
+{/*Getting all recent searches */}
+  const req2 = await fetch(`${baseUrl}/api/addToSrchReqPh/searches`);
+  const res2 = await req2.json();
+  console.log(res2);
   {/*Trending collections */}
   const req = await fetch(`${baseUrl}/api/account/trendingCltn`);
   const res = await req.json();
@@ -430,7 +428,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       photo: response.response.results,
-      searches:searches,
+      searches:res2.searches,
       cltns:res.response.results
     },
   };
