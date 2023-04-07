@@ -3,6 +3,7 @@ import Photo from "./Photo";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Loader from '../Files/Loader'
 import baseUrl from "../../../mongodb/baseUrl";
+import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
 // Cleanup the code, Notification, Rectify the UPlOAD PAGE
 
@@ -34,7 +35,8 @@ export default function Photos({imageArr,setImageArr,page,setPage,totalDocs,page
         hasMore={page>=pageCount?false:true}
         loader={page>=pageCount?"":<Loader/>}
         >
-         <div
+         {/* <div
+
         //  className="render-div my-3 px-4 space-y-4"
         className="render-div my-3 space-y-4 px-4 py-2"
          >
@@ -49,7 +51,27 @@ export default function Photos({imageArr,setImageArr,page,setPage,totalDocs,page
             })
           }
           
-        </div> 
+        </div>  */}
+       <div className="py-4 md:px-4 px-2 ">
+       <ResponsiveMasonry columnsCountBreakPoints={{ 320: 2, 750: 2, 900: 3 ,1440:4,2560:5}}>
+  <Masonry gutter="12px">
+    {/* Add your grid items here */}
+  
+    {
+            imageArr && imageArr.map((image,index)=>{
+              // console.log("inside map function",image)
+              return(
+<div key={index} className="">
+            <Photo image={image} index={index} deviceHeight={deviceHeight} deviceWidth={deviceWidth}/>
+          </div>
+              )
+            })
+          }
+          
+  </Masonry>
+</ResponsiveMasonry>
+</div>
+
         </InfiniteScroll> 
 
       </div>

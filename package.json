@@ -33,6 +33,8 @@
         "react-infinite-scroll-component": "^6.1.0",
         "react-js-loading-progress-bar": "^0.3.1",
         "react-photo-collage": "^1.0.9",
+        "react-photo-gallery": "^8.0.0",
+        "react-responsive-masonry": "^2.1.7",
         "react-scroll-trigger": "^0.6.14",
         "react-toastify": "^9.1.1",
         "react-top-loading-bar": "^2.3.1",
