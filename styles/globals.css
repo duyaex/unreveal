@@ -1,11 +1,8 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* Gallery photos format */
 
 .render-div {
-    text-align: center;
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
@@ -44,6 +41,8 @@
     }
 }
 
+@tailwind components;
+@tailwind utilities;
 .slider {
     height: 250px;
     margin: auto;
