@@ -204,7 +204,7 @@ const trendingTopics=[
         <div className=" ">
           <div className=" text-white space-y-4   ">
             <h1 className=" text-3xl md:text-5xl font-bold py-4">Unreveal</h1>
-            <span className="">
+            <div className="">
               <p className="font-semibold   ">
                 Photography is not only a Hobby,
               </p>
@@ -212,7 +212,7 @@ const trendingTopics=[
                 This can also be your Career
               </p>
               
-            </span>
+            </div>
             <div className="absolute -z-10 bottom-32 md:-bottom-14 lg:-bottom-0  md:w-full w-5/6 ">
               <div className="flex justify-between items-center w-full text-sm">
                 <div className="flex items-center space-x-2">
