@@ -27,7 +27,7 @@ const addToSrch = async(req, res) => {
     const addingData = srchArr.concat(addSrch)
         // console.log("the finale data is ",addingData)
     fs.writeFileSync(filePath, JSON.stringify(addingData), () => {})
-    await res.status(201).json({
+    await res.status(200).json({
         success: true,
         message: "Search has been added"
     })

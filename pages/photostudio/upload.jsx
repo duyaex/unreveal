@@ -215,8 +215,9 @@ export async function getServerSideProps(ctx){
     res.end()
   }
  {/*Getting all photo require searches */}
- const req2 = await fetch(`${baseUrl}/api/addToSrchReqph/addToSrch`);
- const res2 = await req2.json();
+ const req2 = await fetch(`${baseUrl}/api/addToSrchReqPh/addToSrch`)
+ const res2 = await req2.json()
+ console.log("The response is ",res2)
   return{
     props:{
       searches:res2.searches
