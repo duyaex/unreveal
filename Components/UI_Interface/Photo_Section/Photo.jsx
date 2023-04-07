@@ -45,7 +45,7 @@ console.log("The views",res)
 
   return (
     <>
-    <div onClick={incViews} className="Photo relative group w-full">
+    <div onClick={incViews} className="Photo relative group w-fit">
  <Link href={`/photo/${image._id}`}>
   
  <div className="eachview  relative w-full ">
@@ -84,7 +84,7 @@ onLoad={imageStateHolder}
 
   </Link>
 
- <div className="tabDown absolute bottom-0 hidden group-hover:flex  justify-between items-center w-fit px-2 pb-1 bg-black text-white bg-opacity-20 hover:cursor-pointer pt-1">
+ <div className="tabDown absolute bottom-0 hidden group-hover:flex  justify-between items-center w-full px-2 pb-1 bg-black text-white bg-opacity-20 hover:cursor-pointer pt-1">
    <Link href={token?`/userphotos/${image.user._id}`:"/user/login"}><div
     // styles={{backgroundImage:`url(${image.blur_hash})`}} 
     className="flex items-center space-x-2 ">
