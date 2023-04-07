@@ -20,7 +20,7 @@
         "jsonwebtoken": "^9.0.0",
         "mongoose": "^6.9.1",
         "next": "^13.2.4",
-        "node": "^19.8.1",
+        "node": "^16.20.0",
         "nookies": "^2.5.2",
         "path": "^0.12.7",
         "postcss-flexbugs-fixes": "^5.0.2",
