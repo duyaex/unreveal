@@ -175,10 +175,8 @@ const trendingTopics=[
           content="Unreveal is the site for all visuals to easily download free high resolution  photos and use them for various purposes like creating your own app or website. It has easy customization, optimized and ultra resolution photos for free. It cost you no money. Photography is not only a hobby but it can also be your carrier."
         />
         <link rel="icon" href="/favicon.ico" />
-        <meta 
-          name="google-site-verification"
-          content="oDvA5gxOAX6dQlG_vl5B2-X2R9dFrGWl1GIH0JK_lZg"
-        />
+        
+        <meta name="google-site-verification" content="418Bu2sXq34B_lHfLStaeiCIu9jPe3qgPBbWlVo09RE" />
         <meta name="msvalidate.01" content="57F36F6E09DC46A25EC97A50FD3B3FE7" />
       </Head>
 
