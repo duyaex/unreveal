@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import {TbCameraPlus} from 'react-icons/tb'
-
+import baseUrl from '../../mongodb/baseUrl';
 
 import { parseCookies } from 'nookies';
 import Image from 'next/image'
